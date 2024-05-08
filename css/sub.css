@@ -402,6 +402,68 @@ header.fixed {
   margin-bottom: 118px;
 }
 
+
+/******** 신규도입 프로모션 ********/
+.trial-bg {width: 100%; background: linear-gradient(180deg, #F1F3FA 0%, white 100%)}
+.trial .title-sub {text-align: center; color: #86868B; font-size: 20px; font-weight: 500;}
+.trial .title-main {margin-top: 20px; text-align: center; color: #1F2E3D; font-size: 52px; font-weight: 700; word-wrap: break-word}
+.trial .btn-wrap {margin-top: 80px; display: flex; justify-content: center; gap: 70px; transition: all 0.3s;}
+.trial .btn-wrap .btn-big {display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px; width: 500px; height: 300px; text-align: center; background: white; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05); border-radius: 20px; transition: 0.3s ease-in;}
+.trial .btn-wrap .btn-left {position: relative;}
+.trial .btn-wrap .btn-left::after {content: '단, 무료 이용 기간 내 10인 초과 시 유료 전환'; display: block; position: absolute; left: 0; right: 0; bottom: -36px; margin: 0 auto; color: #A1A1A1; font-size: 16px; font-weight: 500; word-wrap: break-word; pointer-events: none;}
+.trial .btn-wrap .figure-wrap {position: relative}
+.trial .btn-wrap .figure-wrap .figure {padding: 5px 40px; background: #1B1B1B; border-radius: 999px; display: inline-block;}
+.trial .btn-wrap .figure-wrap .figure-txt {text-align: center; color: white; font-size: 20px; font-weight: 600; line-height: 36px;}
+.trial .btn-wrap .figure-wrap .triangle {width: 0; height: 0; border-top: 10px solid black; border-right: 10px solid transparent; left: 0; right: 0; top: 46px; margin: 0 auto; position: absolute; }
+.trial .btn-wrap .main-txt {color: black; font-size: 48px; font-weight: 700; line-height: 50px;}
+.trial .btn-wrap .btn-big:hover {background: linear-gradient(121deg, #3EA3FF 0%, #3E58FF 100%); transition: all 0.3s ease-in;}
+.trial .btn-wrap .btn-big:hover .figure {background: #fff;}
+.trial .btn-wrap .btn-big:hover .triangle {border-top: 10px solid #fff;}
+.trial .btn-wrap .btn-big:hover .figure-txt {color: #0086FF;}
+.trial .btn-wrap .btn-big:hover .main-txt {color: #fff; z-index: 1;}
+.trial .ani__btn {margin-top: 122px;}
+.trial .btn-wrap .btn-big {position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px; width: 500px; height: 300px; text-align: center; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05); border-radius: 20px;}
+.trial .btn-wrap .btn-big::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; background: linear-gradient(121deg, #3EA3FF 0%, #3E58FF 100%); transition: opacity 0.2s ease-in; border-radius: inherit;}
+.trial .btn-wrap .btn-big:hover::before {opacity: 1;}
+
+/******** 요금제 안내 ********/
+.pricing .tab-menu ul li.active {background-color: #fff; color: #1F2E3D;}
+.pricing .tab-content {display: none;}
+.pricing .tab-content.active {display: flex;}
+.pricing .table-format .title-mo {display: none;}
+.pricing .title-main {font-size: 52px; font-weight: 700; color: #1F2E3D;}
+.pricing .tab-menu {margin: 40px auto 0;  padding: 8px 10px; display: inline-block; position: relative; border-radius: 100px; background-color: #1F2E3D;}
+.pricing .tab-menu ul {display: flex;}
+.pricing .tab-menu ul li {padding: 14px 40px; border-radius: 100px; font-size: 24px; font-weight: 500; color: #fff;}
+.pricing .tab-menu .add-desc {position: absolute; padding: 6px 15px; top: 21px; right: -125px; text-align: center; font-size: 16px; font-weight: 400; border-radius: 50px; background-color: #188AFD; color: #fff;}
+.pricing .tab-inner {margin-top: 113px; display: flex; justify-content: center;}
+.pricing .item-category {text-align: left; font-size: 18px; font-weight: 400; color: #1F2E3D;}
+.pricing .item-category thead {height: 194px;}
+.pricing .item-category tbody tr:not(.base-price) {border-left: 1px solid #ECECEC; border-right: 1px solid #ECECEC;}
+.pricing .item-category tr {padding-left: 30px; display: flex; align-items: center; width: 257px; height: 61px;}
+.pricing .item-category .table-1 tr {border-bottom: 1px solid #ECECEC;}
+.pricing .item-category .base-price {display: flex; height: 98px; border-radius: 10px 0 0 0; border: 1px solid #ECECEC;}
+.pricing .item-category .total-price {height: 98px; background-color: #F3F3F3;}
+.pricing .tr-last {border-bottom: 1px solid #ECECEC;}
+.pricing .pricing-type {width: 256px;}
+.pricing .pricing-type .pricing-type-title {padding: 30px 5px; display: flex; flex-direction: column; justify-content: space-between; height: 194px; text-align: center; background-color: #1F2E3D;}
+.pricing .pricing-type .pricing-type-title .type-title {font-size: 30px; font-weight: 500; color: #fff;}
+.pricing .pricing-type .pricing-type-title .type-desc {margin-top: 20px; font-size: 18px; font-weight: 400; color: #fff;}
+.pricing .pricing-type .pricing-type-title a {margin: 20px auto 0; padding: 10px 30px; display: flex; width: 150px; height: 37px; justify-content: space-between; border-radius: 100px; background-color: #fff;}
+/* .pricing .pricing-type .pricing-type-title a img {width: 16px;} */
+.pricing .pricing-type table tbody tr {padding: 20px 5px; display: flex; justify-content: center; align-items: center; width: 256px; height: 61px; text-align: center; font-size: 18px; font-weight: 500; letter-spacing: 0; color: #1F2E3D; border-right: 1px solid #ECECEC;}
+.pricing .pricing-type table .table-top tr {border-bottom: 1px solid #ECECEC;}
+.pricing .pricing-type .total-price {height: 98px; background-color: #F3F3F3;}
+.pricing .pricing-type .total-price-row {display: flex; justify-content: center; align-items: center; }
+.pricing .pricing-type .total-price-row-2 {margin-top: 12px;}
+.pricing .pricing-type .base-price {display: flex; height: 98px;}
+
+
+
+
+
+
+
 footer {
   background: #000;
   padding: 69px 0 45px 0;
@@ -548,3 +610,16 @@ footer .footer-copyright {
   width: 100%;
   overflow: hidden;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
