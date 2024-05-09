@@ -431,6 +431,7 @@ header.fixed {
 .pricing .tab-content {display: none;}
 .pricing .tab-content.active {display: flex;}
 .pricing .table-format .title-mo {display: none;}
+.pricing .pricing-type .table-mo {display: none;}
 .pricing .title-main {font-size: 52px; font-weight: 700; color: #1F2E3D;}
 .pricing .tab-menu {margin: 40px auto 0;  padding: 8px 10px; display: inline-block; position: relative; border-radius: 100px; background-color: #1F2E3D;}
 .pricing .tab-menu ul {display: flex;}
@@ -438,6 +439,8 @@ header.fixed {
 .pricing .tab-menu .add-desc {position: absolute; padding: 6px 15px; top: 21px; right: -125px; text-align: center; font-size: 16px; font-weight: 400; border-radius: 50px; background-color: #188AFD; color: #fff;}
 .pricing .tab-inner {margin-top: 113px; display: flex; justify-content: center;}
 .pricing .item-category {text-align: left; font-size: 18px; font-weight: 400; color: #1F2E3D;}
+.pricing .item-category .total {font-weight: 700; line-height: 25px;}
+.pricing .item-category .total span {font-size: 16px; font-weight: 400; letter-spacing: 0; color: #8F8F8F;}
 .pricing .item-category thead {height: 194px;}
 .pricing .item-category tbody tr:not(.base-price) {border-left: 1px solid #ECECEC; border-right: 1px solid #ECECEC;}
 .pricing .item-category tr {padding-left: 30px; display: flex; align-items: center; width: 257px; height: 61px;}
@@ -446,18 +449,24 @@ header.fixed {
 .pricing .item-category .total-price {height: 98px; background-color: #F3F3F3;}
 .pricing .tr-last {border-bottom: 1px solid #ECECEC;}
 .pricing .pricing-type {width: 256px;}
+.pricing .pricing-type-1 .pricing-type-title {border-radius: 10px 0 0 0;}
+.pricing .pricing-type-4 .pricing-type-title {border-radius: 0 10px 0 0;}
+.pricing .pricing-type .pricing-type-title:not(.pricing-type-4) {border-right: 1px solid #9E9E9E;}
 .pricing .pricing-type .pricing-type-title {padding: 30px 5px; display: flex; flex-direction: column; justify-content: space-between; height: 194px; text-align: center; background-color: #1F2E3D;}
 .pricing .pricing-type .pricing-type-title .type-title {font-size: 30px; font-weight: 500; color: #fff;}
-.pricing .pricing-type .pricing-type-title .type-desc {margin-top: 20px; font-size: 18px; font-weight: 400; color: #fff;}
+.pricing .pricing-type .pricing-type-title .type-desc {margin-top: 20px; font-size: 18px; font-weight: 300; color: #fff;}
 .pricing .pricing-type .pricing-type-title a {margin: 20px auto 0; padding: 10px 30px; display: flex; width: 150px; height: 37px; justify-content: space-between; border-radius: 100px; background-color: #fff;}
 /* .pricing .pricing-type .pricing-type-title a img {width: 16px;} */
 .pricing .pricing-type table tbody tr {padding: 20px 5px; display: flex; justify-content: center; align-items: center; width: 256px; height: 61px; text-align: center; font-size: 18px; font-weight: 500; letter-spacing: 0; color: #1F2E3D; border-right: 1px solid #ECECEC;}
 .pricing .pricing-type table .table-top tr {border-bottom: 1px solid #ECECEC;}
-.pricing .pricing-type .total-price {height: 98px; background-color: #F3F3F3;}
-.pricing .pricing-type .total-price-row {display: flex; justify-content: center; align-items: center; }
+.pricing .pricing-type .total-price {height: 98px; font-weight: 600; background-color: #F3F3F3;}
+.pricing .pricing-type .total-price-row {display: flex; justify-content: center; align-items: center; gap: 5px;}
 .pricing .pricing-type .total-price-row-2 {margin-top: 12px;}
+.pricing .pricing-type .total-price-row p:nth-child(1) {font-size: 16px; font-weight: 500; color: #7B7B7B;}
+.pricing .pricing-type .total-price span {font-size: 16px; font-weight: 500; color: #7B7B7B; text-decoration: line-through;}
 .pricing .pricing-type .base-price {display: flex; height: 98px;}
-
+.pricing .pricing-type .color-green {color: #5CAB56;}
+.pricing .pricing-type .color-purple {color: #9666C6;}
 
 
 
