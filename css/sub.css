@@ -430,6 +430,7 @@ header.fixed {
 .pricing .tab-menu ul li.active {background-color: #fff; color: #1F2E3D;}
 .pricing .tab-content {display: none;}
 .pricing .tab-content.active {display: flex;}
+.pricing .table-format {display: flex;}
 .pricing .table-format .title-mo {display: none;}
 .pricing .pricing-type .table-mo {display: none;}
 .pricing .title-main {font-size: 52px; font-weight: 700; color: #1F2E3D;}
@@ -454,9 +455,8 @@ header.fixed {
 .pricing .pricing-type .pricing-type-title:not(.pricing-type-4) {border-right: 1px solid #9E9E9E;}
 .pricing .pricing-type .pricing-type-title {padding: 30px 5px; display: flex; flex-direction: column; justify-content: space-between; height: 194px; text-align: center; background-color: #1F2E3D;}
 .pricing .pricing-type .pricing-type-title .type-title {font-size: 30px; font-weight: 500; color: #fff;}
-.pricing .pricing-type .pricing-type-title .type-desc {margin-top: 20px; font-size: 18px; font-weight: 300; color: #fff;}
+.pricing .pricing-type .pricing-type-title .type-desc {margin-top: 20px; font-size: 18px; font-weight: 300; color: #D3D3D3;}
 .pricing .pricing-type .pricing-type-title a {margin: 20px auto 0; padding: 10px 30px; display: flex; width: 150px; height: 37px; justify-content: space-between; border-radius: 100px; background-color: #fff;}
-/* .pricing .pricing-type .pricing-type-title a img {width: 16px;} */
 .pricing .pricing-type table tbody tr {padding: 20px 5px; display: flex; justify-content: center; align-items: center; width: 256px; height: 61px; text-align: center; font-size: 18px; font-weight: 500; letter-spacing: 0; color: #1F2E3D; border-right: 1px solid #ECECEC;}
 .pricing .pricing-type table .table-top tr {border-bottom: 1px solid #ECECEC;}
 .pricing .pricing-type .total-price {height: 98px; font-weight: 600; background-color: #F3F3F3;}
@@ -464,11 +464,35 @@ header.fixed {
 .pricing .pricing-type .total-price-row-2 {margin-top: 12px;}
 .pricing .pricing-type .total-price-row p:nth-child(1) {font-size: 16px; font-weight: 500; color: #7B7B7B;}
 .pricing .pricing-type .total-price span {font-size: 16px; font-weight: 500; color: #7B7B7B; text-decoration: line-through;}
-.pricing .pricing-type .base-price {display: flex; height: 98px;}
+.pricing .pricing-type .base-price {display: flex; height: 98px; line-height: 30px;}
 .pricing .pricing-type .color-green {color: #5CAB56;}
 .pricing .pricing-type .color-purple {color: #9666C6;}
 
+@media (max-width: 1440px) {
+  .pricing .item-category tr {width: 220px;}  
+}
+@media (max-width: 1360px) {
+  .pricing .tab-inner {padding: 0 60px;}
+  .pricing .table-format .title-mo {display: block;}
+  .pricing .pricing-type .table-mo {display: block; width: 100%; border-radius: 0 0 10px 10px; border: 1px solid #ECECEC; border-top: 0;} 
+  .pricing .item-category {display: none;}
+  .pricing .pricing-type .pricing-type-title {flex-direction: row; justify-content: center; gap: 50px; height: 140px; border-radius: 10px 10px 0 0;}
+  .pricing .pricing-type .pricing-type-title a {margin: 20px 0;}
+  .pricing .pricing-type .pricing-type-title .type-desc {margin-top: 10px;}
+  .pricing .tab-content {width: 100%;}
+  .pricing .table-format {display: flex; flex-direction: column; gap: 30px; width: 100%;}
+  .pricing .pricing-type {width: 100%;}
+  .pricing .pricing-type table {width: 100%; border-left: 1px solid #ECECEC;}
+  .pricing .pricing-type table tbody tr {width: 100%; padding: 0;}
+  .pricing .pricing-type table tbody tr td {width: 50%; padding: 20px 5px;}
+  .pricing .table-format .title-mo {border-right: 1px solid #ECECEC;}
+  .pricing .pricing-type .base-price {height: 100%;}
+  .pricing .pricing-type .table-mo tbody {width: 100%; display: grid; justify-content: center; align-items: center;}
+  .pricing .pricing-type .table-mo tr {text-align: center; height: 96px; border-right: 0; display: table-row-group;}
+  .pricing .pricing-type .table-mo tr td {padding: 0;}
+  .pricing .pricing-type .table-mo tr td .more-btn {margin-top: 30px; display: flex; justify-content: center; padding: 12px 0; gap: 10px; width: 272px; height: 40px; font-size: 15px; font-weight: 400; background-color: #1F2E3D; color: #fff; border-radius: 100px;}
 
+}
 
 
 
