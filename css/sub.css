@@ -477,7 +477,7 @@ header.fixed {
 .pricing .tab-menu-2 ul .tablinks-2 a {font-size: 24px; font-weight: 600; color: #1F2E3D;}
 .pricing .tab-menu-2 ul .tablinks-2.active {background-color: #1F2E3D;}
 .pricing .tab-menu-2 ul .tablinks-2.active a {color: #fff;}
-.pricing .tab-content-2 {display: none; padding: 200px 0 140px;}
+.pricing .tab-content-2 {display: none; padding: 200px 60px 140px;}
 .pricing .tab-content-2.active {display: block;}
 .pricing .title-wrap .title-sub {font-size: 20px; font-weight: 500; color: #86868B;}
 .pricing .title-wrap .title-main {margin-top: 40px;}
@@ -531,6 +531,7 @@ header.fixed {
   .pricing .table-format .title-mo {display: block;}
   .pricing .pricing-type .table-mo {display: block; width: 100%; border-radius: 0 0 10px 10px; border: 1px solid #ECECEC; border-top: 0;} 
   .pricing .item-category {display: none;}
+  .pricing .pricing-type .type-title-wrap {margin-top: 7px;}
   .pricing .pricing-type .pricing-type-title {flex-direction: row; justify-content: center; gap: 50px; height: 140px; border-radius: 10px 10px 0 0;}
   .pricing .pricing-type .pricing-type-title a {margin: 20px 0;}
   .pricing .pricing-type .pricing-type-title .type-desc {margin-top: 10px;}
@@ -546,9 +547,17 @@ header.fixed {
   .pricing .pricing-type .table-mo tr {text-align: center; height: 96px; border-right: 0; display: table-row-group;}
   .pricing .pricing-type .table-mo tr td {padding: 0;}
   .pricing .pricing-type .table-mo tr td .more-btn {margin-top: 30px; display: flex; justify-content: center; padding: 12px 0; gap: 10px; width: 272px; height: 40px; font-size: 15px; font-weight: 400; background-color: #1F2E3D; color: #fff; border-radius: 100px;}
+  .pricing .extra-text p {padding-left: 60px;}
 
+  .pricing .tab-menu-2 {padding: 0 60px;}
+  .pricing .tab-menu-2 ul .tablinks-2 a {font-size: 20px;}
 }
-
+@media (max-width: 1279px) {
+  .pricing .content-box-wrap .content-box-upper {flex-direction: column;}
+  .pricing .content-box-wrap .content-box-under .content-box {flex-direction: column;}
+  .pricing .content-box-wrap .content-box-under .content-box-3 {height: unset;}
+  .pricing .content-box-wrap .content-box-under .content-box .box-right {padding: 70px 0 80px 50px;}
+}
 
 
 
