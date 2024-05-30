@@ -403,6 +403,12 @@ header.fixed {
 }
 
 
+@media (max-width: 767px) {
+  .btn {padding: 16px 26px; font-size: 14px; gap: 15px;}
+  .btn > img {width: 18px;}
+}
+
+
 /******** 신규도입 프로모션 ********/
 .trial-bg {width: 100%; background: linear-gradient(180deg, #F1F3FA 0%, white 100%)}
 .trial .title-sub {text-align: center; color: #86868B; font-size: 20px; font-weight: 500;}
@@ -638,15 +644,21 @@ header.fixed {
 /******** 기업추천 할인 프로모션 ********/
 .recommendation {padding: 140px 0 175px; background: linear-gradient(to bottom, #F1F3FA 0%, #FFFFFF 20%);}
 .recommendation .inner {max-width: 1280px; margin: 0 auto;}
+.recommendation .onlymo {display: none;}
 .recommendation .title-main {font-size: 52px; font-weight: 800;}
 .recommendation .title-sub {margin-top: 30px; font-size: 24px; font-weight: 500;}
 .recommendation .introduction {padding-bottom: 225px;}
-.recommendation .introduction .title-main {margin-top: 20px; font-size: 52px; font-weight: 800;}
-.recommendation .introduction .title-desc {margin-top: 37px; font-size: 24px; font-weight: 500; line-height: 36px;}
+.recommendation .introduction .inner {position: relative;}
+.recommendation .introduction .star-2 {position: absolute; top: 182px; left: 30px;}
+.recommendation .introduction .star-3 {position: absolute; top: 327px; right: 37px;}
+.recommendation .introduction .title-wrap {position: relative; display: inline-block;}
+.recommendation .introduction .title-wrap .star-1 {position: absolute; top: 60px; right: -30px;}
+.recommendation .introduction .title-main {margin-top: 20px; font-family: 'Recipekorea'; font-size: 52px; line-height: 64px; letter-spacing: 0;}
+.recommendation .introduction .title-desc {margin-top: 37px; font-size: 24px; font-weight: 500; line-height: 36px; word-break: keep-all;}
 .recommendation .introduction .title-detail {margin: 71px auto 0; padding: 60px 109px; max-width: 860px; background-color: #fff; border: 3px solid #5D9AE2; border-radius: 20px; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);}
 .recommendation .introduction .detail-upper {padding-bottom: 60px; display: grid; grid-template-columns: 1fr 9fr; align-items: center; font-size: 20px; font-weight: 500; gap: 24px; border-bottom: 2px dashed #DFDFDF;}
 .recommendation .introduction .detail-upper .square {padding: 2px 13px; align-self: flex-start; width: 61px; line-height: 36px; text-align: center; background-color: #2269BC; color: #fff; border-radius: 3px;}
-.recommendation .introduction .detail-upper .detail-desc {text-align: left;}
+.recommendation .introduction .detail-upper .detail-desc {text-align: left; line-height: 30px; word-break: keep-all;}
 .recommendation .introduction .detail-under {padding-top: 60px; text-align: left;}
 .recommendation .introduction .detail-under .detail-under-heading {font-size: 24px; font-weight: 600;}
 .recommendation .introduction .detail-under .detail-under-text {margin-top: 20px; font-size: 20px; font-weight: 400; line-height: 36px;}
@@ -684,6 +696,81 @@ header.fixed {
 .recommendation .start .title-sub {font-size: 20px; font-weight: 500; line-height: 26px; color: #86868B;}
 .recommendation .start .btn-wrap {margin-top: 118px;}
 
+@media (max-width: 1360px) {
+  .recommendation .inner {padding: 0 60px;}
+  .recommendation .function .function-box-wrap {grid-template-columns: 1fr 1fr;}
+}
+@media (max-width: 1279px) {
+  .recommendation .contents .content-box .content-sub {word-break: keep-all;}
+  .recommendation .contents .content-box .content-sub > br {display: none;}
+  .recommendation .contents .content-box .content-icon {font-size: 80px;}
+  .recommendation .contents .content-box .content-title {font-size: 32px; line-height: 42px;}
+  .recommendation .contents .content-box .keyword {margin-top: 25px; font-size: 22px;}
+  .recommendation .contents .content-box .content-sub {font-size: 18px; line-height: 28px;}
+}
+@media (max-width: 1014px) {
+  .recommendation .contents .content-box {padding: 30px 50px;}
+  .recommendation .contents .content-box .content-title {font-size: 29px; line-height: 37px;}
+}
+@media (max-width: 959px) {
+  .recommendation .introduction .title-detail {padding: 80px;}
+  .recommendation .contents .content-box-wrap {grid-template-columns: 1fr;}
+  .recommendation .title-main {font-size: 45px;}
+  .recommendation .start .title-sub {font-size: 18px;}
+}
+
+@media (max-width: 767px) {
+  .recommendation {padding: 110px 0 217px;}
+  .recommendation .inner {padding: 0 20px;}
+  .recommendation .onlymo {display: block;}
+  .recommendation .btn-wrap {margin-top: 38px;}
+  .recommendation .introduction {padding-bottom: 60px;}
+  .recommendation .introduction .inner {padding: 0 20px;}
+  .recommendation .introduction .title-wrap > img {width: 149px;}
+  .recommendation .introduction .title-main {margin-top: 30px; font-size: 30px; line-height: 30px;}
+  .recommendation .introduction .title-wrap .star-1 {width: 56px; top: 40px; right: 0;}
+  .recommendation .introduction .star-2 {display: none;}
+  .recommendation .introduction .star-3 {display: none;}
+  .recommendation .introduction .title-desc {margin-top: 20px; font-size: 16px; line-height: 28px;}
+  .recommendation .introduction .title-detail {margin-top: 60px; padding: 40px 30px;}
+  .recommendation .introduction .detail-upper {padding-bottom: 40px; gap: unset; column-gap: 14px; row-gap: 10px;}
+  .recommendation .introduction .detail-upper .square {padding: 2px 13px; width: 51px; height: 28px; font-size: 14px; line-height: 24px;}
+  .recommendation .introduction .detail-upper .detail-desc {font-size: 14px; line-height: 26px;}
+  .recommendation .introduction .detail-under {padding-top: 40px;}
+  .recommendation .introduction .detail-under .detail-under-heading {font-size: 20px;}
+  .recommendation .introduction .detail-under .detail-under-text {font-size: 16px; line-height: 26px;}
+  .recommendation .caution {padding: 60px 0;}
+  .recommendation .caution .caution-heading {font-size: 24px;}
+  .recommendation .caution ol {margin-top: 27px;}
+  .recommendation .caution ol li {font-size: 14px; line-height: 24px;}
+  .recommendation .caution ol li:not(:nth-child(1)) {margin-top: 10px;}
+  .recommendation .contents {padding: 100px 0 120px;}
+  .recommendation .title-main {font-size: 30px; line-height: 42px; word-break: keep-all;}
+  .recommendation .title-sub {margin-top: 30px; font-size: 18px;}
+  .recommendation .contents .content-box-wrap {margin-top: 40px;}
+  .recommendation .contents .content-box {padding: 30px 30px 40px;}
+  .recommendation .contents .content-box .content-icon {font-size: 50px;}
+  .recommendation .contents .content-box .keyword {margin-top: 30px; padding: 6px 10px; font-size: 14px;}
+  .recommendation .contents .content-box .content-title {margin-top: 15px; font-size: 24px; line-height: 36px;}
+  .recommendation .contents .content-box .content-sub {margin-top: 15px; font-size: 16px; line-height: 28px;}
+  .recommendation .function {padding: 60px 0 138px;}
+  .recommendation .function .title-main > br:nth-child(2) {display: none;}
+  .recommendation .function .function-box-wrap {margin-top: 60px; grid-template-columns: 1fr;}
+  .recommendation .function .function-category {padding: 18px 0; font-size: 20px;}
+  .recommendation .function .function-detail {padding: 10px 20px;}
+  .recommendation .function .function-detail p {font-size: 18px;}
+  .recommendation .partner {padding: 120px 0 105px;}
+  .recommendation .partner .title-main > br:nth-child(2) {display: none;}
+  .recommendation .partner .logo-wrap {margin-top: 50px;}
+  .recommendation .partner .logo-wrap .grid-columns-5 {grid-template-columns: repeat(3, 1fr); gap: 10px;}
+  .recommendation .partner .logo-wrap .grid-columns-6 {margin-top: 10px; grid-template-columns: repeat(3, 1fr); gap: 10px;}
+  .recommendation .partner .logo-wrap .logo-box {padding: 10px; height: 34px; border-radius: 8px;}
+  .recommendation .partner .logo-wrap .logo-box > img {height: 100%;}
+  .recommendation .partner .logo-wrap .grid-columns-6 .logo-box:nth-child(4) img {height: 30px;}
+  .recommendation .start {padding: 95px 0 0 0;}
+  .recommendation .start .title-sub {font-size: 16px; line-height: 26px;}
+  .recommendation .start .btn-wrap {margin-top: 60px;}
+}
 
 
 

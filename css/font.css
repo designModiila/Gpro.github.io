@@ -108,3 +108,11 @@
     url("../fonts/pretendard/Pretendard-Black.ttf") format("truetype");
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Recipekorea';
+  src: url("../fonts/Recipekorea/Recipekorea.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
