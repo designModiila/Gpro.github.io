@@ -641,12 +641,45 @@ header.fixed {
   .pricing .add-service .content-box-3 .sub-desc {top: 175px;}
 }
 
+
+/******** 프로모션 공통 ********/
+.promotion .title-main {font-size: 52px; font-weight: 800;}
+.promotion .title-sub {margin-top: 30px; font-size: 24px; font-weight: 500;}
+.promotion .contents {padding: 224px 0 160px;}
+.promotion .contents .content-box-wrap {margin-top: 80px; display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 40px;}
+.promotion .contents .content-box {padding: 50px 70px; width: 100%; text-align: left; border-radius: 20px; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
+.promotion .contents .content-box .content-icon {font-size: 96px;}
+.promotion .contents .content-box .keyword {margin-top: 43px; padding: 6px 10px; display: inline-block; font-size: 24px; font-weight: 600; border-radius: 5px;}
+.promotion .contents .content-box .keyword-1 {background-color: #7D7D7D; color: #fff;}
+.promotion .contents .content-box .keyword-2 {background-color: #FFDBDB; color: #D92828;}
+.promotion .contents .content-box .keyword-3 {background-color: #CCEAFF; color: #248DED;}
+.promotion .contents .content-box .keyword-4 {background-color: #EBDBFF; color: #8128D9;}
+.promotion .contents .content-box .content-title {margin-top: 20px; font-size: 36px; font-weight: 700; color: #1F2E3D;}
+.promotion .contents .content-box .content-sub {margin-top: 20px; font-size: 20px; font-weight: 500; line-height: 30px; color: #7B7B7B;}
+.promotion .function {padding: 160px 0 173px; background-color: #F8F8F8;}
+.promotion .function .function-box-wrap {margin-top: 80px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;}
+.promotion .function .function-box {border-radius: 20px; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
+.promotion .function .function-category {padding: 30px 0; width: 100%; font-size: 24px; font-weight: 600; border-radius: 20px 20px 0 0; background-color: #313131; color: #fff;}
+.promotion .function .function-detail {padding: 20px 26px; display: flex; flex-direction: column; gap: 10px;}
+.promotion .function .function-detail p {padding: 16px 0; text-align: left; font-size: 20px; font-weight: 600; color: #1F2E3D;}
+.promotion .function .function-detail p span {margin-right: 20px; font-size: 24px;}
+.promotion .partner {padding: 220px 0 150px;}
+.promotion .partner .logo-wrap {margin-top: 92px;}
+.promotion .partner .logo-wrap .logo-box {padding: 10px; height: 80px; display: flex; justify-content: center; align-items: center; border-radius: 20px; background-color: #fff; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
+.promotion .partner .logo-wrap .logo-box > img {object-fit: contain;}
+.promotion .partner .logo-wrap .grid-columns-5 {display: grid; grid-template-columns: repeat(5, 1fr); column-gap: 23px; row-gap: 24px;}
+.promotion .partner .logo-wrap .grid-columns-6 {margin-top: 24px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 23px;}
+.promotion .partner .logo-wrap .grid-columns-6 .logo-box:nth-child(4) img {width: 57px; height: 60px;}
+.promotion .start {padding: 106px 0 0;}
+.promotion .start .title-sub {font-size: 20px; font-weight: 500; line-height: 26px; color: #86868B;}
+.promotion .start .btn-wrap {margin-top: 118px;}
+
+
+
 /******** 기업추천 할인 프로모션 ********/
 .recommendation {padding: 140px 0 175px; background: linear-gradient(to bottom, #F1F3FA 0%, #FFFFFF 20%);}
 .recommendation .inner {max-width: 1280px; margin: 0 auto;}
 .recommendation .onlymo {display: none;}
-.recommendation .title-main {font-size: 52px; font-weight: 800;}
-.recommendation .title-sub {margin-top: 30px; font-size: 24px; font-weight: 500;}
 .recommendation .introduction {padding-bottom: 225px;}
 .recommendation .introduction .inner {position: relative;}
 .recommendation .introduction .star-2 {position: absolute; top: 182px; left: 30px;}
@@ -667,34 +700,7 @@ header.fixed {
 .recommendation .caution ol {margin-top: 20px; margin-left: 20px;}
 .recommendation .caution ol li {font-size: 18px; font-weight: 500; line-height: 28px; list-style: decimal;}
 .recommendation .caution ol li:not(:nth-child(1)) {margin-top: 10px;}
-.recommendation .contents {padding: 224px 0 160px;}
-.recommendation .contents .content-box-wrap {margin-top: 80px; display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 40px;}
-.recommendation .contents .content-box {padding: 50px 70px; width: 100%; text-align: left; border-radius: 20px; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
-.recommendation .contents .content-box .content-icon {font-size: 96px;}
-.recommendation .contents .content-box .keyword {margin-top: 43px; padding: 6px 10px; display: inline-block; font-size: 24px; font-weight: 600; border-radius: 5px;}
-.recommendation .contents .content-box .keyword-1 {background-color: #7D7D7D; color: #fff;}
-.recommendation .contents .content-box .keyword-2 {background-color: #FFDBDB; color: #D92828;}
-.recommendation .contents .content-box .keyword-3 {background-color: #CCEAFF; color: #248DED;}
-.recommendation .contents .content-box .keyword-4 {background-color: #EBDBFF; color: #8128D9;}
-.recommendation .contents .content-box .content-title {margin-top: 20px; font-size: 36px; font-weight: 700; color: #1F2E3D;}
-.recommendation .contents .content-box .content-sub {margin-top: 20px; font-size: 20px; font-weight: 500; line-height: 30px; color: #7B7B7B;}
-.recommendation .function {padding: 160px 0 173px; background-color: #F8F8F8;}
-.recommendation .function .function-box-wrap {margin-top: 80px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;}
-.recommendation .function .function-box {border-radius: 20px; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
-.recommendation .function .function-category {padding: 30px 0; width: 100%; font-size: 24px; font-weight: 600; border-radius: 20px 20px 0 0; background-color: #313131; color: #fff;}
-.recommendation .function .function-detail {padding: 20px 26px; display: flex; flex-direction: column; gap: 10px;}
-.recommendation .function .function-detail p {padding: 16px 0; text-align: left; font-size: 20px; font-weight: 600; color: #1F2E3D;}
-.recommendation .function .function-detail p span {margin-right: 20px; font-size: 24px;}
-.recommendation .partner {padding: 220px 0 150px;}
-.recommendation .partner .logo-wrap {margin-top: 92px;}
-.recommendation .partner .logo-wrap .logo-box {padding: 10px; height: 80px; display: flex; justify-content: center; align-items: center; border-radius: 20px; background-color: #fff; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
-.recommendation .partner .logo-wrap .logo-box > img {object-fit: contain;}
-.recommendation .partner .logo-wrap .grid-columns-5 {display: grid; grid-template-columns: repeat(5, 1fr); column-gap: 23px; row-gap: 24px;}
-.recommendation .partner .logo-wrap .grid-columns-6 {margin-top: 24px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 23px;}
-.recommendation .partner .logo-wrap .grid-columns-6 .logo-box:nth-child(4) img {width: 57px; height: 60px;}
-.recommendation .start {padding: 106px 0 0;}
-.recommendation .start .title-sub {font-size: 20px; font-weight: 500; line-height: 26px; color: #86868B;}
-.recommendation .start .btn-wrap {margin-top: 118px;}
+
 
 @media (max-width: 1360px) {
   .recommendation .inner {padding: 0 60px;}
@@ -771,6 +777,76 @@ header.fixed {
   .recommendation .start .title-sub {font-size: 16px; line-height: 26px;}
   .recommendation .start .btn-wrap {margin-top: 60px;}
 }
+
+/******** 클라우드서비스 바우처 프로모션 ********/
+.cloudvoucher {padding-bottom: 230px; background: linear-gradient(to bottom, #F1F3FA 0%, #FFFFFF 20%);}
+.cloudvoucher .inner {max-width: 1280px; margin: 0 auto;}
+.cloudvoucher .onlymo {display: none;}
+.cloudvoucher .introduction {padding-bottom: 207px;}
+.cloudvoucher .introduction .title-wrap img {width: 643px; object-fit: contain;}
+.cloudvoucher .introduction .title-wrap .title-sub {margin-top: 34px; font-size: 30px; font-weight: 800; color: #0075FF;}
+.cloudvoucher .introduction .title-wrap .title-main {margin-top: 30px; font-size: 52px; font-weight: 800; color: #1F2E3D;}
+.cloudvoucher .introduction .btn-wrap {margin-top: 52px;}
+.cloudvoucher .introduction .ui-main {margin-top: 120px; width: 772px; object-fit: contain;}
+.cloudvoucher .support {padding: 120px 0 75px; background: linear-gradient(to bottom, #FFFFFF 0%, #F8F8F8 50%);}
+.cloudvoucher .support .support-detail {margin-top: 72px; padding: 70px; border-radius: 20px; background-color: #fff; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
+.cloudvoucher .support .support-detail .chart-wrap {display: flex; justify-content: center; align-items: center; gap: 107px;}
+.cloudvoucher .support .support-detail .chart-wrap p {font-size: 24px; font-weight: 800; line-height: 38px;}
+.cloudvoucher .support .support-detail .chart-1 {position: relative;}
+.cloudvoucher .support .support-detail .chart-1 > p {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.cloudvoucher .support .support-detail .chart-2 {position: relative;}
+.cloudvoucher .support .support-detail .chart-2 .text-gov {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.cloudvoucher .support .support-detail .chart-2 .text-com {position: absolute; width: 104px; top: 25%; left: 100%; transform: translate(-50%, -50%);}
+.cloudvoucher .support .support-detail .detail-wrap {margin-top: 62px; padding: 0 195px; display: grid; grid-template-columns: 1fr 9fr; align-items: center; font-size: 20px; font-weight: 500; row-gap: 20px; column-gap: 30px;}
+.cloudvoucher .support .support-detail .detail-wrap .square {padding: 14px 20px; align-self: flex-start; width: 146px; text-align: center; background-color: #313131; color: #fff; border-radius: 8px;}
+.cloudvoucher .support .support-detail .detail-wrap .detail-desc {text-align: left; line-height: 30px; word-break: keep-all;}
+.cloudvoucher .support .caution {margin-top: 50px; padding: 0 184px; text-align: left;}
+.cloudvoucher .support .caution .caution-heading {font-size: 30px; font-weight: 600;}
+.cloudvoucher .support .caution ol {margin-top: 30px;}
+.cloudvoucher .support .caution ol li {margin-top: 8px; margin-left: 20px; list-style: decimal; font-size: 18px; font-weight: 500; line-height: 28px;}
+.cloudvoucher .question {margin-top: 70px;}
+.cloudvoucher .question .question-wrap {margin-top: 70px; width: 100%;}
+.cloudvoucher .question .question-wrap .question-row {padding: 30px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #D9D9D9;}
+.cloudvoucher .question .question-wrap .question-row .icon-question {display: flex; align-items: center; gap: 30px;}
+.cloudvoucher .question .question-wrap .question-row .icon-question > img {width: 46px; object-fit: contain;}
+.cloudvoucher .question .question-wrap .question-row .icon-question .question-text {font-size: 24px; font-weight: 600; color: #1F2E3D; cursor: pointer;}
+.cloudvoucher .question .question-wrap .question-row .icon-question .question-text:hover {color: #8e9397;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
