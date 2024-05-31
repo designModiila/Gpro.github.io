@@ -813,10 +813,39 @@ header.fixed {
 .cloudvoucher .question .question-wrap .question-row .icon-question .question-text:hover {color: #8e9397;}
 
 
-
-
-
-
+/********  비대면 바우처  ********/
+.untactvoucher {padding-bottom: 230px; background: linear-gradient(to bottom, #F1F3FA 0%, #FFFFFF 20%);}
+.untactvoucher .inner {max-width: 1280px; margin: 0 auto;}
+.untactvoucher .onlymo {display: none;}
+.untactvoucher .introduction {padding-bottom: 207px;}
+.untactvoucher .introduction .title-wrap img {width: 643px; object-fit: contain;}
+.untactvoucher .introduction .title-wrap .title-sub {margin-top: 34px; font-size: 30px; font-weight: 800; color: #0075FF;}
+.untactvoucher .introduction .title-wrap .title-main {margin-top: 30px; font-size: 52px; font-weight: 800; color: #1F2E3D;}
+.untactvoucher .introduction .btn-wrap {margin-top: 52px;}
+.untactvoucher .introduction .ui-main {margin-top: 120px; width: 772px; object-fit: contain;}
+.untactvoucher .support {padding: 114px 0 122px; background-color: #F8F8F8;}
+.untactvoucher .support .support-detail {margin-top: 72px; padding: 70px; border-radius: 20px; background-color: #fff; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
+.untactvoucher .support .support-detail .chart-wrap {display: flex; justify-content: center; align-items: center; gap: 107px;}
+.untactvoucher .support .support-detail .chart-wrap p {font-size: 24px; font-weight: 800; line-height: 38px;}
+.untactvoucher .support .support-detail .chart-1 {position: relative;}
+.untactvoucher .support .support-detail .chart-1 > p {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.untactvoucher .support .support-detail .chart-2 {position: relative;}
+.untactvoucher .support .support-detail .chart-2 .text-gov {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.untactvoucher .support .support-detail .chart-2 .text-com {position: absolute; width: 104px; top: 25%; left: 100%; transform: translate(-50%, -50%);}
+.untactvoucher .support .support-detail .detail-wrap {margin-top: 62px; padding: 0 195px; display: grid; grid-template-columns: 1fr 9fr; align-items: center; font-size: 20px; font-weight: 500; row-gap: 20px; column-gap: 30px;}
+.untactvoucher .support .support-detail .detail-wrap .square {padding: 14px 20px; align-self: flex-start; width: 146px; text-align: center; background-color: #313131; color: #fff; border-radius: 8px;}
+.untactvoucher .support .support-detail .detail-wrap .detail-desc {text-align: left; line-height: 30px; word-break: keep-all;}
+.untactvoucher .support .caution {margin-top: 50px; padding: 0 184px; text-align: left;}
+.untactvoucher .support .caution .caution-heading {font-size: 30px; font-weight: 600;}
+.untactvoucher .support .caution ol {margin-top: 30px;}
+.untactvoucher .support .caution ol li {margin-top: 8px; margin-left: 20px; list-style: decimal; font-size: 18px; font-weight: 500; line-height: 28px;}
+.untactvoucher .use {padding: 186px 0 0 0;}
+.untactvoucher .use .use-box-wrap {margin-top: 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;}
+.untactvoucher .use .use-box-wrap .use-box {padding: 40px 50px; height: 360px; text-align: left; border-radius: 20px; background-color: #fff; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
+.untactvoucher .use .use-box-wrap .use-box .use-icon {font-size: 80px;}
+.untactvoucher .use .use-box-wrap .use-box .use-title {margin-top: 35px; font-size: 30px; font-weight: 700; color: #1F2E3D;}
+.untactvoucher .use .use-box-wrap .use-box .use-desc {margin-top: 42px; font-size: 20px; font-weight: 500; line-height: 30px; color: #5D5D5D;}
+.untactvoucher .use .use-box-wrap .use-box .logo-wrap {margin-top: 8px; margin-bottom: 52px; display: flex; justify-content: center; align-items: center; width: 80px; height: 80px; border-radius: 22px; background-color: #000;}
 
 
 
