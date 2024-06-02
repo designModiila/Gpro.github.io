@@ -645,7 +645,7 @@ header.fixed {
 /******** 프로모션 공통 ********/
 .promotion .title-main {font-size: 52px; font-weight: 800;}
 .promotion .title-sub {margin-top: 30px; font-size: 24px; font-weight: 500;}
-.promotion .contents {padding: 224px 0 160px;}
+.promotion .contents {padding: 220px 0 160px;}
 .promotion .contents .content-box-wrap {margin-top: 80px; display: grid; grid-template-columns: 1fr 1fr; grid-auto-rows: auto; gap: 40px;}
 .promotion .contents .content-box {padding: 50px 70px; width: 100%; text-align: left; border-radius: 20px; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
 .promotion .contents .content-box .content-icon {font-size: 96px;}
@@ -704,25 +704,25 @@ header.fixed {
 
 @media (max-width: 1360px) {
   .recommendation .inner {padding: 0 60px;}
-  .recommendation .function .function-box-wrap {grid-template-columns: 1fr 1fr;}
+  .promotion .function .function-box-wrap {grid-template-columns: 1fr 1fr;}
 }
 @media (max-width: 1279px) {
-  .recommendation .contents .content-box .content-sub {word-break: keep-all;}
-  .recommendation .contents .content-box .content-sub > br {display: none;}
-  .recommendation .contents .content-box .content-icon {font-size: 80px;}
-  .recommendation .contents .content-box .content-title {font-size: 32px; line-height: 42px;}
-  .recommendation .contents .content-box .keyword {margin-top: 25px; font-size: 22px;}
-  .recommendation .contents .content-box .content-sub {font-size: 18px; line-height: 28px;}
+  .promotion .contents .content-box .content-sub {word-break: keep-all;}
+  .promotion .contents .content-box .content-sub > br {display: none;}
+  .promotion .contents .content-box .content-icon {font-size: 80px;}
+  .promotion .contents .content-box .content-title {font-size: 32px; line-height: 42px;}
+  .promotion .contents .content-box .keyword {margin-top: 25px; font-size: 22px;}
+  .promotion .contents .content-box .content-sub {font-size: 18px; line-height: 28px;}
 }
 @media (max-width: 1014px) {
-  .recommendation .contents .content-box {padding: 30px 50px;}
-  .recommendation .contents .content-box .content-title {font-size: 29px; line-height: 37px;}
+  .promotion .contents .content-box {padding: 30px 50px;}
+  .promotion .contents .content-box .content-title {font-size: 29px; line-height: 37px;}
 }
 @media (max-width: 959px) {
   .recommendation .introduction .title-detail {padding: 80px;}
-  .recommendation .contents .content-box-wrap {grid-template-columns: 1fr;}
-  .recommendation .title-main {font-size: 45px;}
-  .recommendation .start .title-sub {font-size: 18px;}
+  .promotion .contents .content-box-wrap {grid-template-columns: 1fr;}
+  .promotion .title-main {font-size: 45px;}
+  .promotion .start .title-sub {font-size: 18px;}
 }
 
 @media (max-width: 767px) {
@@ -750,32 +750,32 @@ header.fixed {
   .recommendation .caution ol {margin-top: 27px;}
   .recommendation .caution ol li {font-size: 14px; line-height: 24px;}
   .recommendation .caution ol li:not(:nth-child(1)) {margin-top: 10px;}
-  .recommendation .contents {padding: 100px 0 120px;}
-  .recommendation .title-main {font-size: 30px; line-height: 42px; word-break: keep-all;}
-  .recommendation .title-sub {margin-top: 30px; font-size: 18px;}
-  .recommendation .contents .content-box-wrap {margin-top: 40px;}
-  .recommendation .contents .content-box {padding: 30px 30px 40px;}
-  .recommendation .contents .content-box .content-icon {font-size: 50px;}
-  .recommendation .contents .content-box .keyword {margin-top: 30px; padding: 6px 10px; font-size: 14px;}
-  .recommendation .contents .content-box .content-title {margin-top: 15px; font-size: 24px; line-height: 36px;}
-  .recommendation .contents .content-box .content-sub {margin-top: 15px; font-size: 16px; line-height: 28px;}
-  .recommendation .function {padding: 60px 0 138px;}
-  .recommendation .function .title-main > br:nth-child(2) {display: none;}
-  .recommendation .function .function-box-wrap {margin-top: 60px; grid-template-columns: 1fr;}
-  .recommendation .function .function-category {padding: 18px 0; font-size: 20px;}
-  .recommendation .function .function-detail {padding: 10px 20px;}
-  .recommendation .function .function-detail p {font-size: 18px;}
-  .recommendation .partner {padding: 120px 0 105px;}
-  .recommendation .partner .title-main > br:nth-child(2) {display: none;}
-  .recommendation .partner .logo-wrap {margin-top: 50px;}
-  .recommendation .partner .logo-wrap .grid-columns-5 {grid-template-columns: repeat(3, 1fr); gap: 10px;}
-  .recommendation .partner .logo-wrap .grid-columns-6 {margin-top: 10px; grid-template-columns: repeat(3, 1fr); gap: 10px;}
-  .recommendation .partner .logo-wrap .logo-box {padding: 10px; height: 34px; border-radius: 8px;}
-  .recommendation .partner .logo-wrap .logo-box > img {height: 100%;}
-  .recommendation .partner .logo-wrap .grid-columns-6 .logo-box:nth-child(4) img {height: 30px;}
-  .recommendation .start {padding: 95px 0 0 0;}
-  .recommendation .start .title-sub {font-size: 16px; line-height: 26px;}
-  .recommendation .start .btn-wrap {margin-top: 60px;}
+  .promotion .contents {padding: 100px 0 120px;}
+  .promotion .title-main {font-size: 30px; line-height: 42px; word-break: keep-all;}
+  .promotion .title-sub {margin-top: 30px; font-size: 18px;}
+  .promotion .contents .content-box-wrap {margin-top: 40px;}
+  .promotion .contents .content-box {padding: 30px 30px 40px;}
+  .promotion .contents .content-box .content-icon {font-size: 50px;}
+  .promotion .contents .content-box .keyword {margin-top: 30px; padding: 6px 10px; font-size: 14px;}
+  .promotion .contents .content-box .content-title {margin-top: 15px; font-size: 24px; line-height: 36px;}
+  .promotion .contents .content-box .content-sub {margin-top: 15px; font-size: 16px; line-height: 28px;}
+  .promotion .function {padding: 60px 0 138px;}
+  .promotion .function .title-main > br:nth-child(2) {display: none;}
+  .promotion .function .function-box-wrap {margin-top: 60px; grid-template-columns: 1fr;}
+  .promotion .function .function-category {padding: 18px 0; font-size: 20px;}
+  .promotion .function .function-detail {padding: 10px 20px;}
+  .promotion .function .function-detail p {font-size: 18px;}
+  .promotion .partner {padding: 120px 0 105px;}
+  .promotion .partner .title-main > br:nth-child(2) {display: none;}
+  .promotion .partner .logo-wrap {margin-top: 50px;}
+  .promotion .partner .logo-wrap .grid-columns-5 {grid-template-columns: repeat(3, 1fr); gap: 10px;}
+  .promotion .partner .logo-wrap .grid-columns-6 {margin-top: 10px; grid-template-columns: repeat(3, 1fr); gap: 10px;}
+  .promotion .partner .logo-wrap .logo-box {padding: 10px; height: 34px; border-radius: 8px;}
+  .promotion .partner .logo-wrap .logo-box > img {height: 100%;}
+  .promotion .partner .logo-wrap .grid-columns-6 .logo-box:nth-child(4) img {height: 30px;}
+  .promotion .start {padding: 95px 0 0 0;}
+  .promotion .start .title-sub {font-size: 16px; line-height: 26px;}
+  .promotion .start .btn-wrap {margin-top: 60px;}
 }
 
 /******** 클라우드서비스 바우처 프로모션 ********/
@@ -811,6 +811,77 @@ header.fixed {
 .cloudvoucher .question .question-wrap .question-row .icon-question > img {width: 46px; object-fit: contain;}
 .cloudvoucher .question .question-wrap .question-row .icon-question .question-text {font-size: 24px; font-weight: 600; color: #1F2E3D; cursor: pointer;}
 .cloudvoucher .question .question-wrap .question-row .icon-question .question-text:hover {color: #8e9397;}
+
+
+@media (max-width: 1360px) {
+  .cloudvoucher .inner {padding: 0 60px;}
+  .cloudvoucher .support .title-main {padding: 0 130px; word-break: keep-all;}
+  .cloudvoucher .support .title-main > br {display: none;}
+  .cloudvoucher .support .support-detail .detail-wrap {padding: 0 80px 0 150px;}
+  .cloudvoucher .support .caution {padding: 0 100px; word-break: keep-all;}
+}
+@media (max-width: 1160px) {
+  .cloudvoucher .support .support-detail .chart-wrap {gap: 50px;}
+  .cloudvoucher .support .support-detail .chart-wrap p {font-size: 20px;}
+  .cloudvoucher .support .support-detail .chart-2 .text-com {left: 93%;}
+  .cloudvoucher .support .support-detail .detail-wrap {padding: 0 80px;}
+}
+@media (max-width: 959px) {
+  .cloudvoucher .introduction .title-wrap img {max-width: 580px;}
+  .cloudvoucher .introduction .title-wrap .title-sub {font-size: 26px;}
+  .cloudvoucher .introduction .title-wrap .title-main {font-size: 45px;}
+  .cloudvoucher .support .title-main {padding: 0 100px; font-size: 45px;}
+  .cloudvoucher .support .support-detail .detail-wrap {padding: 0;}
+  .cloudvoucher .support .caution {padding: 0 70px;}
+  .cloudvoucher .question .question-wrap .question-row {gap: 30px;}
+  .cloudvoucher .question .question-wrap .question-row .icon-question .question-text {font-size: 20px; text-align: left; word-break: keep-all;}
+  .cloudvoucher .question .question-wrap .question-row .icon-question > img {width: 40px;}
+}
+@media (max-width: 800px) {
+  .cloudvoucher .support .support-detail .chart-wrap {gap: 30px;}
+  .cloudvoucher .support .title-main {padding: 0 60px;}
+}
+@media (max-width: 767px) {
+  .section {padding-top: 64px; padding-bottom: 222px;}
+  .cloudvoucher .inner {padding: 0 20px;}
+  .cloudvoucher .introduction {padding-bottom: 94px;}
+  .cloudvoucher .introduction .title-wrap .title-sub {margin-top: 20px; font-size: 20px; font-weight: 600; line-height: 32px;}
+  .cloudvoucher .introduction .title-wrap .title-main {margin-top: 20px; font-size: 30px; line-height: 42px;}
+  .cloudvoucher .introduction .btn-wrap {margin-top: 60px;}
+  .cloudvoucher .introduction .ui-main {margin-top: 60px;}
+  .cloudvoucher .support {padding:  80px 0; background: none; background-color: #F8F8F8;}
+  .cloudvoucher .support .title-main {font-size: 30px; line-height: 42px;}
+  .cloudvoucher .support .support-detail {margin-top: 50px; padding: 0; box-shadow: none; background-color: #F8F8F8;}
+  .cloudvoucher .support .support-detail .chart-wrap {flex-direction: column;}
+  .cloudvoucher .support .support-detail .chart-wrap > img {transform: rotate(90deg); width: 30px;}
+  .cloudvoucher .support .support-detail .chart-wrap p {font-size: 18px; line-height: 30px;}
+  .cloudvoucher .support .support-detail .detail-wrap {margin-top: 65px; column-gap: 15px; row-gap: 27px;}
+  .cloudvoucher .support .support-detail .detail-wrap .square {padding: 10px 5px; font-size: 14px; width: 90px;}
+  .cloudvoucher .support .support-detail .detail-wrap .detail-desc {font-size: 14px; line-height: 22px;}
+  .cloudvoucher .support .caution {margin-top: 60px; padding: 0;}
+  .cloudvoucher .support .caution .caution-heading {font-size: 24px;}
+  .cloudvoucher .support .caution ol {margin-top: 20px;}
+  .cloudvoucher .support .caution ol li {font-size: 16px; line-height: 28px; font-weight: 400;}
+  .cloudvoucher .question .question-wrap {margin-top: 60px;}
+  .cloudvoucher .question .question-wrap .question-row {padding: 20px 0; gap: 10px;}
+  .cloudvoucher .question .question-wrap .question-row .icon-question {gap: 15px;}
+  .cloudvoucher .question .question-wrap .question-row .icon-question > img {width: 24px;}
+  .cloudvoucher .question .question-wrap .question-row .icon-question .question-text {font-size: 16px; line-height: 22px;}
+  .cloudvoucher .question .question-wrap .question-row .question-arrow {width: 20px;}
+
+}
+
+@media (max-width: 620px) {
+  .cloudvoucher .introduction .title-wrap img {width: 100%;}
+  .cloudvoucher .support .title-main {padding: 0;}
+}
+
+
+
+
+
+
+
 
 
 /********  비대면 바우처  ********/
@@ -946,8 +1017,8 @@ footer .footer-info .company-info p a {
   font-weight: 600;
   text-decoration: none;
 }
-footer .policy-wrap {
-}
+/* footer .policy-wrap {
+} */
 footer .policy-wrap .policy {
   margin-bottom: 23px;
   color: #fff;
