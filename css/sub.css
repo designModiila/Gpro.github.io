@@ -868,20 +868,12 @@ header.fixed {
   .cloudvoucher .question .question-wrap .question-row .icon-question > img {width: 24px;}
   .cloudvoucher .question .question-wrap .question-row .icon-question .question-text {font-size: 16px; line-height: 22px;}
   .cloudvoucher .question .question-wrap .question-row .question-arrow {width: 20px;}
-
 }
 
 @media (max-width: 620px) {
   .cloudvoucher .introduction .title-wrap img {width: 100%;}
   .cloudvoucher .support .title-main {padding: 0;}
 }
-
-
-
-
-
-
-
 
 
 /********  비대면 바우처  ********/
@@ -918,13 +910,72 @@ header.fixed {
 .untactvoucher .use .use-box-wrap .use-box .use-desc {margin-top: 42px; font-size: 20px; font-weight: 500; line-height: 30px; color: #5D5D5D;}
 .untactvoucher .use .use-box-wrap .use-box .logo-wrap {margin-top: 8px; margin-bottom: 52px; display: flex; justify-content: center; align-items: center; width: 80px; height: 80px; border-radius: 22px; background-color: #000;}
 
+@media (max-width: 1364px) {
+  .untactvoucher .use .use-box-wrap .use-box {height: unset;}
+}
+@media (max-width: 1360px) {
+  .untactvoucher .inner {padding: 0 60px;}
+  .untactvoucher .support .title-main {padding: 0 130px; word-break: keep-all;}
+  .untactvoucher .support .title-main > br {display: none;}
+  .untactvoucher .support .support-detail .detail-wrap {padding: 0 80px 0 150px;}
+  .untactvoucher .support .caution {padding: 0 100px; word-break: keep-all;}
+}
+@media (max-width: 1250px) {
+  .untactvoucher .use .use-box-wrap .use-box .use-desc > br {display: none;}
+  .untactvoucher .use .use-box-wrap .use-box .use-title {word-break: keep-all;}
+}
+@media (max-width: 1160px) {
+  .untactvoucher .support .support-detail .chart-wrap {gap: 50px;}
+  .untactvoucher .support .support-detail .chart-wrap p {font-size: 20px;}
+  .untactvoucher .support .support-detail .chart-2 .text-com {left: 93%;}
+  .untactvoucher .support .support-detail .detail-wrap {padding: 0 80px;}
+}
 
+@media (max-width: 959px) {
+  .untactvoucher .introduction .title-wrap img {max-width: 580px;}
+  .untactvoucher .introduction .title-wrap .title-sub {font-size: 26px;}
+  .untactvoucher .introduction .title-wrap .title-main {font-size: 45px;}
+  .untactvoucher .support .title-main {padding: 0 100px; font-size: 45px;}
+  .untactvoucher .support .support-detail .detail-wrap {padding: 0;}
+  .untactvoucher .support .caution {padding: 0 70px;}
+  .untactvoucher .use .use-box-wrap {grid-template-columns: 1fr;}
+}
+@media (max-width: 800px) {
+  .untactvoucher .support .support-detail .chart-wrap {gap: 30px;}
+  .untactvoucher .support .title-main {padding: 0 60px;}
+}
+@media (max-width: 767px) {
+  .untactvoucher .inner {padding: 0 20px;}
+  .untactvoucher .introduction {padding-bottom: 94px;}
+  .untactvoucher .introduction .title-wrap .title-sub {margin-top: 20px; font-size: 20px; font-weight: 600; line-height: 32px;}
+  .untactvoucher .introduction .title-wrap .title-main {margin-top: 20px; font-size: 30px; line-height: 42px;}
+  .untactvoucher .introduction .btn-wrap {margin-top: 60px;}
+  .untactvoucher .introduction .ui-main {margin-top: 60px;}
+  .untactvoucher .support {padding:  80px 0; background: none; background-color: #F8F8F8;}
+  .untactvoucher .support .title-main {font-size: 30px; line-height: 42px;}
+  .untactvoucher .support .support-detail {margin-top: 50px; padding: 0; box-shadow: none; background-color: #F8F8F8;}
+  .untactvoucher .support .support-detail .chart-wrap {flex-direction: column;}
+  .untactvoucher .support .support-detail .chart-wrap > img {transform: rotate(90deg); width: 30px;}
+  .untactvoucher .support .support-detail .chart-wrap p {font-size: 18px; line-height: 30px;}
+  .untactvoucher .support .support-detail .detail-wrap {margin: 65px auto 0; width: 350px; column-gap: 15px; row-gap: 27px;}
+  .untactvoucher .support .support-detail .detail-wrap .square {padding: 10px 5px; font-size: 14px; width: 90px;}
+  .untactvoucher .support .support-detail .detail-wrap .detail-desc {font-size: 14px; line-height: 22px;}
+  .untactvoucher .use {padding: 100px 0 0 0;}
+  .untactvoucher .use .use-box-wrap {margin-top: 42px;}
+  .untactvoucher .use .use-box-wrap .use-box .use-icon {font-size: 50px;}
+  .untactvoucher .use .use-box-wrap .use-box .use-title {margin-top: 40px; font-size: 20px;}
+  .untactvoucher .use .use-box-wrap .use-box .use-desc {margin-top: 30px; font-size: 16px; line-height: 28px;}
+  .untactvoucher .use .use-box-wrap .use-box .logo-wrap {padding: 13px 9px; width: 50px; height: 50px; border-radius: 13px;}
 
-
-
-
-
-
+}
+@media (max-width: 620px) {
+  .untactvoucher .introduction .title-wrap img {width: 100%;}
+  .untactvoucher .support .title-main {padding: 0;}
+}
+@media (max-width: 430px) {
+  .support .chart-wrap .chart-1 > img,
+  .support .chart-wrap .chart-2 > img {width: 200px;}
+}
 
 
 
