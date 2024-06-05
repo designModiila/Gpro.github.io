@@ -1033,9 +1033,9 @@ header.fixed {
 .interview .chapter .chapter-num {font-size: 52px; font-weight: 800; line-height: 80px; color: #0075FF;}
 .interview .chapter .main-title {margin-top: 10px; font-size: 52px; font-weight: 800; line-height: 80px; color: #1F2E3D;}
 .interview .chapter > img {margin-top: 80px;}
-.interview .chapter .question {margin-top: 60px; text-align: left; display: flex; align-items: center; gap: 20px;}
+.interview .chapter .question {margin-top: 60px; text-align: left; display: flex; align-items: flex-start; gap: 20px;}
 .interview .chapter .question > img {width: 40px; height: 40px;}
-.interview .chapter .question .question-text {font-size: 24px; font-weight: 800; line-height: 40px;}
+.interview .chapter .question .question-text {font-size: 24px; font-weight: 800; line-height: 36px;}
 .interview .chapter .answer {margin-top: 30px; text-align: left;}
 .interview .chapter .answer .main-text {margin-top: 10px; font-size: 18px; font-weight: 400; line-height: 32px;}
 .interview .chapter .answer .name-blue {font-size: 24px; font-weight: 800; line-height: 38px; color: #175CE0;}
@@ -1043,9 +1043,39 @@ header.fixed {
 .interview .chapter .answer .name-green {font-size: 24px; font-weight: 800; line-height: 38px; color: #5CD631;}
 .interview .chapter .answer .name-wrap {display: flex; gap: 20px;}
 
-
-
-
+@media (max-width: 1440px) {
+  .interview .inner {padding: 0 80px;}
+}
+@media (max-width: 960px) {
+  .interview .inner {padding: 0 60px;}
+  .interview .chapter .chapter-num {font-size: 45px;}
+  .interview .chapter .main-title {font-size: 45px; line-height: 60px;}
+  .interview .chapter .question .question-text {font-size: 22px; line-height: 30px;}
+  .interview .chapter .question > img {width: 30px; height: 30px;}
+  .interview .chapter .answer .name-blue,
+  .interview .chapter .answer .name-orange,
+  .interview .chapter .answer .name-green {font-size: 22px;}
+}
+@media (max-width: 767px) {
+  .interview .inner {padding: 0 20px;}
+  .interview .interview-top .badge {padding: 12px 14px; font-size: 13px;}
+  .interview .interview-top .main-title {margin-top: 30px; font-size: 30px; line-height: 42px;}
+  .interview .interview-top .title-sub {margin-top: 30px; font-size: 18px; line-height: 30px;}
+  .interview .interview-top > img {margin-top: 100px;}
+  .interview .interview-top .main-text {margin-top: 74px; font-size: 15px; line-height: 27px;}
+  .interview .chapter {margin-top: 92px;}
+  .interview .chapter .chapter-num {text-align: left; font-size: 30px; line-height: 42px;}
+  .interview .chapter .main-title {margin-top: 5px; text-align: left; font-size: 30px; line-height: 42px;}
+  .interview .chapter > img {margin-top: 70px;}
+  .interview .chapter .question {margin-top: 50px; flex-direction: column; gap: 15px;}
+  .interview .chapter .question .question-text {font-size: 20px; line-height: 32px;}
+  .interview .chapter .answer {margin-top: 20px;}
+  .interview .chapter .answer .name-blue, 
+  .interview .chapter .answer .name-orange, 
+  .interview .chapter .answer .name-green {font-size: 18px; line-height: 30px;}
+  .interview .chapter .answer .main-text {font-size: 15px; line-height: 27px;}
+  .interview .chapter .answer .name-wrap {gap: 15px;}
+}
 
 
 
