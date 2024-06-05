@@ -1022,19 +1022,26 @@ header.fixed {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+/********  고객사 인터뷰 ********/
+.interview .inner {margin: 0 auto; max-width: 1280px;}
+.interview .interview-top .badge {display: inline-block; padding: 16px 31px; font-size: 16px; font-weight: 500; line-height: 100%; border-radius: 100px; color: #fff; background-color: #1F2E3D;}
+.interview .interview-top .main-title {margin-top: 67px; font-size: 52px; line-height: 64px; font-weight: 800;}
+.interview .interview-top .title-sub {margin-top: 46px; font-size: 20px; line-height: 34px; font-weight: 400;}
+.interview .interview-top > img {margin-top: 65px;}
+.interview .interview-top .main-text {margin-top: 60px; text-align: left; font-size: 18px; line-height: 32px; font-weight: 400;}
+.interview .chapter {margin-top: 180px;}
+.interview .chapter .chapter-num {font-size: 52px; font-weight: 800; line-height: 80px; color: #0075FF;}
+.interview .chapter .main-title {margin-top: 10px; font-size: 52px; font-weight: 800; line-height: 80px; color: #1F2E3D;}
+.interview .chapter > img {margin-top: 80px;}
+.interview .chapter .question {margin-top: 60px; text-align: left; display: flex; align-items: center; gap: 20px;}
+.interview .chapter .question > img {width: 40px; height: 40px;}
+.interview .chapter .question .question-text {font-size: 24px; font-weight: 800; line-height: 40px;}
+.interview .chapter .answer {margin-top: 30px; text-align: left;}
+.interview .chapter .answer .main-text {margin-top: 10px; font-size: 18px; font-weight: 400; line-height: 32px;}
+.interview .chapter .answer .name-blue {font-size: 24px; font-weight: 800; line-height: 38px; color: #175CE0;}
+.interview .chapter .answer .name-orange {font-size: 24px; font-weight: 800; line-height: 38px; color: #FF922D;}
+.interview .chapter .answer .name-green {font-size: 24px; font-weight: 800; line-height: 38px; color: #5CD631;}
+.interview .chapter .answer .name-wrap {display: flex; gap: 20px;}
 
 
 
