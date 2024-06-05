@@ -1023,7 +1023,7 @@ header.fixed {
 
 
 /********  고객사 인터뷰 ********/
-.interview .inner {margin: 0 auto; max-width: 1280px;}
+.interview .inner {margin: 0 auto; padding-bottom: 232px; max-width: 1280px;}
 .interview .interview-top .badge {display: inline-block; padding: 16px 31px; font-size: 16px; font-weight: 500; line-height: 100%; border-radius: 100px; color: #fff; background-color: #1F2E3D;}
 .interview .interview-top .main-title {margin-top: 67px; font-size: 52px; line-height: 64px; font-weight: 800;}
 .interview .interview-top .title-sub {margin-top: 46px; font-size: 20px; line-height: 34px; font-weight: 400;}
