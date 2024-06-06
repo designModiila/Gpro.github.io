@@ -1077,7 +1077,70 @@ header.fixed {
   .interview .chapter .answer .name-wrap {gap: 15px;}
 }
 
+/********  새소식 ********/
+.news .inner {margin: 0 auto; padding-top: 100px; max-width: 1280px;}
+.news .tab-menu {margin: 0 auto; display: flex; justify-content: center; gap: 30px;}
+.news .tab-menu li a {padding: 20px 47px; display: block; width: 150px; height: 56px; font-size: 16px; font-weight: 500; line-height: 16px; border-radius: 100px; border: 1px solid #1F2E3D; color: #1F2E3D; transition: all 0.3s;}
+.news .tab-menu li a:hover {background-color: #1F2E3D; color: #fff;}
+.news .tab-menu li a.active {background-color: #1F2E3D; color: #fff;}
+.news .content-list-wrap {margin-top: 120px; display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 30px; row-gap: 80px;}
+.news .content-list .heading {margin-top: 30px; text-align: left; font-size: 24px; font-weight: 500; line-height: 34px; transition: all 0.3s;}
+.news .content-list .heading:hover {opacity: 0.6;}
+.news .content-list .thumb-frame {overflow: hidden;}
+.news .content-list .thumb-frame > img {transition: all 0.8s;}
+.news .content-list .thumb-frame:hover > img {scale: 1.1;}
+.news .page-list-wrap {margin-top: 100px; display: flex; justify-content: center; align-items: center; gap: 30px;}
+.news .page-list-wrap .page-num {display: flex; justify-content: center; gap: 30px; font-size: 20px; font-weight: 500; color: #C1C1C1;}
+.news .page-list-wrap .page-num li a {transition: all 0.3s;}
+.news .page-list-wrap .page-num li a:hover {color: #1F2E3D;}
+.news .page-list-wrap .page-num li a.active {color: #1F2E3D;}
+.news .page-list-wrap button {opacity: 0.2;}
+.news .page-list-wrap button.active {opacity: 1;}
 
+@media (max-width: 1440px) {
+  .news .inner {padding: 0 80px;}
+}
+@media (max-width: 960px) {
+  .news .inner {padding: 0 60px;}
+  .news .tab-menu {gap: 15px;}
+  .news .content-list .heading {font-size: 22px;}
+}
+@media (max-width: 830px) {
+  .news .content-list-wrap {grid-template-columns: 1fr 1fr;}
+}
+@media (max-width: 767px) {
+  .news .inner {padding: 0 20px;}
+  .news .tab-menu {gap: 10px; justify-content: space-between; flex-wrap: wrap;}
+  .news .content-list-wrap {margin-top: 80px;}
+  .news .content-list .heading {margin-top: 18px; font-size: 18px; line-height: 30px;}
+  .news .content-list-wrap {row-gap: 60px;}
+  .news .page-list-wrap .page-num {font-size: 16px;}
+  .news .page-list-wrap {margin-top: 60px;}
+}
+@media (max-width: 590px) {
+  .news .content-list-wrap {grid-template-columns: 1fr;}
+  .news .content-list .thumb-frame > img {width: 100%;}
+  .news .tab-menu li a {padding: 12px 27px; width: 100px; height: 37px; line-height: 13px; font-size: 13px;}
+}
+
+/********  새소식 컨텐츠 ********/
+.article {padding-bottom: 215px;}
+.article .article-wrap {margin-top: 60px; padding: 100px 0; border-top: 1px solid #D9D9D9; border-bottom: 1px solid #D9D9D9;}
+.article .article-heading {font-size: 30px; font-weight: 600; line-height: 34px;}
+.article .source {margin-top: 55px; font-size: 20px; font-weight: 400; line-height: 34px;}
+.article .article-img {margin-top: 50px;}
+.article .article-text {margin-top: 60px; text-align: left; font-size: 18px; font-weight: 400; line-height: 32px;}
+.article .full-article-link {padding: 80px 0 104px;}
+.article .full-article-link p {font-size: 18px; font-weight: 400; line-height: 32px;}
+.article .full-article-link a {font-size: 20px; font-weight: 400; line-height: 34px; text-decoration: underline;}
+.article .full-article-link a:hover {opacity: 0.5;}
+.article .list-prev-next .article-list {padding: 20px; display: flex; align-items: center; gap: 20px; border-top: 1px solid #D9D9D9;}
+.article .list-prev-next .article-list:last-child {border-bottom: 1px solid #D9D9D9;}
+.article .list-prev-next .article-list a {font-size: 18px; font-weight: 400; line-height: 32px; transition: all 0.3s;}
+.article .list-prev-next .article-list a:hover {opacity: 0.6;}
+.article .article-btn {margin-top: 40px; display: flex; justify-content: space-between;}
+.article .article-btn a {padding: 20px 47px; display: block; width: 150px; height: 56px; font-size: 16px; font-weight: 500; line-height: 16px; border-radius: 100px; border: 1px solid #1F2E3D; color: #1F2E3D; transition: all 0.3s;}
+.article .article-btn a:hover {background-color: #1F2E3D; color: #fff;}
 
 
 
