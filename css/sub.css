@@ -1086,7 +1086,7 @@ header.fixed {
 .news .content-list-wrap {margin-top: 120px; display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 30px; row-gap: 80px;}
 .news .content-list .heading {margin-top: 30px; text-align: left; font-size: 24px; font-weight: 500; line-height: 34px; transition: all 0.3s;}
 .news .content-list .heading:hover {opacity: 0.6;}
-.news .content-list .thumb-frame {overflow: hidden;}
+.news .content-list .thumb-frame {max-width: 407px; overflow: hidden;}
 .news .content-list .thumb-frame > img {transition: all 0.8s;}
 .news .content-list .thumb-frame:hover > img {scale: 1.1;}
 .news .page-list-wrap {margin-top: 100px; display: flex; justify-content: center; align-items: center; gap: 30px;}
@@ -1119,6 +1119,7 @@ header.fixed {
 }
 @media (max-width: 590px) {
   .news .content-list-wrap {grid-template-columns: 1fr;}
+  .news .content-list .thumb-frame {max-width: 100%;}
   .news .content-list .thumb-frame > img {width: 100%;}
   .news .tab-menu li a {padding: 12px 27px; width: 100px; height: 37px; line-height: 13px; font-size: 13px;}
 }
@@ -1128,7 +1129,7 @@ header.fixed {
 .article .article-wrap {margin-top: 60px; padding: 100px 0; border-top: 1px solid #D9D9D9; border-bottom: 1px solid #D9D9D9;}
 .article .article-heading {font-size: 30px; font-weight: 600; line-height: 34px;}
 .article .source {margin-top: 55px; font-size: 20px; font-weight: 400; line-height: 34px;}
-.article .article-img {margin-top: 50px;}
+.article .article-img {margin: 50px auto 0; max-width: 844px;}
 .article .article-text {margin-top: 60px; text-align: left; font-size: 18px; font-weight: 400; line-height: 32px;}
 .article .full-article-link {padding: 80px 0 104px;}
 .article .full-article-link p {font-size: 18px; font-weight: 400; line-height: 32px;}
@@ -1142,7 +1143,20 @@ header.fixed {
 .article .article-btn a {padding: 20px 47px; display: block; width: 150px; height: 56px; font-size: 16px; font-weight: 500; line-height: 16px; border-radius: 100px; border: 1px solid #1F2E3D; color: #1F2E3D; transition: all 0.3s;}
 .article .article-btn a:hover {background-color: #1F2E3D; color: #fff;}
 
-
+@media (max-width: 767px) {
+  .article .article-wrap {padding: 80px 0;}
+  .article .article-heading {text-align: left; font-size: 24px;}
+  .article .source {margin-top: 30px; text-align: left; font-size: 16px; line-height: 28px;}
+  .article .article-img {margin: 80px auto 0;}
+  .article .article-text {margin-top: 40px; font-size: 15px; line-height: 27px;}
+  .article .full-article-link {padding: 40px 0; border-bottom: 1px solid #D9D9D9;}
+  .article .full-article-link p {font-size: 15px; line-height: 27px;}
+  .article .full-article-link a {font-size: 15px; line-height: 27px; word-break: keep-all;}
+  .article .list-prev-next {display: none;}
+  .article .article-btn {margin-top: 60px; justify-content: center;}
+  .article .article-btn .writing-btn {display: none;}
+  .article .article-btn a {padding: 12px 20px; width: 100px; height: 38px; font-size: 14px; line-height: 14px;}
+}
 
 
 footer {
