@@ -671,7 +671,7 @@ header.fixed {
 .promotion .partner .logo-wrap .grid-columns-6 {margin-top: 24px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 23px;}
 .promotion .partner .logo-wrap .grid-columns-6 .logo-box:nth-child(4) img {width: 57px; height: 60px;}
 .promotion .start {padding: 106px 0 0;}
-.promotion .start .title-sub {font-size: 20px; font-weight: 500; line-height: 26px; color: #86868B;}
+.promotion .start .title-sub {font-size: 20px; font-weight: 500; line-height: 26px; color: #86868B; word-break: keep-all;}
 .promotion .start .btn-wrap {margin-top: 118px;}
 
 
@@ -983,7 +983,7 @@ header.fixed {
 .linkage .introduction .btn-wrap {margin-top: 50px;}
 .linkage .erp {margin-top: 246px;}
 .linkage .erp .erp-box {position: relative; margin-top: 55px; height: 400px; display: flex; justify-content: space-between; border-radius: 20px; background-color: #ECF3F6; overflow: hidden;}
-.linkage .erp .erp-box .erp-desc-wrap {padding: 68px 0 0 52px; text-align: left;}
+.linkage .erp .erp-box .erp-desc-wrap {padding: 68px 0 50px 52px; text-align: left;}
 .linkage .erp .erp-box .erp-desc-wrap .erp-desc {font-size: 20px; font-weight: 500; line-height: 30px; color: #527281;}
 .linkage .erp .erp-box .erp-desc-wrap .erp-icon {margin-top: 90px; font-size: 96px;}
 .linkage .erp .erp-box .erp-img-1 {position: absolute; width: 31%; top: 40%; right: 25%;}
@@ -991,7 +991,7 @@ header.fixed {
 .linkage .cloud {margin-top: 220px;}
 .linkage .cloud .cloud-box-wrap {margin-top: 73px; text-align: left;}
 .linkage .cloud .cloud-box-wrap .cloud-box-desc {display: flex; justify-content: left; height: 330px; border-radius: 20px; background-color: #EEF9E5;}
-.linkage .cloud .cloud-box-wrap .cloud-box-desc .cloud-desc {margin-top: 72px; font-size: 20px; font-weight: 500; color: #527281;}
+.linkage .cloud .cloud-box-wrap .cloud-box-desc .cloud-desc {margin-top: 72px; font-size: 20px; font-weight: 500; line-height: 30px; color: #527281;}
 .linkage .cloud .cloud-box-wrap .cloud-img-wrap {position: relative; display: flex; padding-left: 10px; align-items: center; width: 528px; align-self: center;}
 .linkage .cloud .cloud-box-wrap .cloud-img-wrap .cloud-icon {position: absolute; top: 155px; right: -209px;}
 .linkage .cloud .cloud-box-wrap .cloud-col {display: flex; margin-top: 20px; gap: 20px;}
@@ -999,8 +999,10 @@ header.fixed {
 .linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-icon-wrap {margin-top: -15px;}
 .linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-icon-wrap > img:nth-child(1) {margin-left: -75px; width: 95%; object-fit: contain;}
 .linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-icon-wrap > img:nth-child(2) {margin: -20px 0 0 30px; width: 88%; object-fit: contain;}
-.linkage .cloud .cloud-box-wrap .cloud-box-naver {padding: 48px 25px 0 0; text-align: center; border-radius: 20px; background-color: #E6FAEF;}
+.linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-img-wrap > img {width: 65%;}
+.linkage .cloud .cloud-box-wrap .cloud-box-naver {padding: 48px 25px 0; text-align: center; border-radius: 20px; background-color: #E6FAEF;}
 .linkage .cloud .cloud-box-wrap .cloud-box-naver > img:last-child {margin-top: 22px;}
+.linkage .cloud .cloud-box-wrap .cloud-box-naver > img:first-child {margin: 0 auto; width: 85%;}
 .linkage .process {margin-top: 220px;}
 .linkage .process .process-box-wrap {margin-top: 84px;}
 .linkage .process .process-box-wrap .process-box-desc {padding: 50px 13px 0 53px; display: flex; justify-content: space-between; border-radius: 20px; background-color: #E2EDF5;}
@@ -1011,12 +1013,102 @@ header.fixed {
 .linkage .process .process-box-col .process-box-drive > img {max-width: 100%; object-fit: contain;}
 .linkage .process .process-box-col .process-box-drive img:nth-child(1) {margin-left: -30px;}
 .linkage .process .process-box-col .process-box-drive img:nth-child(2) {margin-left: -30%; position: absolute; bottom: 0; right: 0;}
-.linkage .process .process-box-col .process-box-calender {position: relative; display: flex; padding: 0 10% 10% 0; width: 100%; height: 450px; overflow: hidden; border-radius: 20px; background-color: #EDF6F9;}
+.linkage .process .process-box-col .process-box-calender {position: relative; display: flex; align-items: flex-start; padding: 0 10% 10% 0; width: 100%; height: 450px; overflow: hidden; border-radius: 20px; background-color: #EDF6F9;}
 .linkage .process .process-box-col .process-box-calender img {max-width: 100%; object-fit: contain;}
-.linkage .process .process-box-col .process-box-calender img:nth-child(2) {position: absolute; margin-left: -30%; position: absolute; bottom: 0; right: 0;}
+.linkage .process .process-box-col .process-box-calender img:nth-child(2) {position: absolute; margin-left: -30%; bottom: 0; right: 0;}
 .linkage  .start {margin-top: 287px; padding-top: 0;}
 
+@media (max-width: 1170px) {
+  .linkage .inner {margin: 0 80px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-desc {padding-right: 50px; justify-content: space-between;}
+  .linkage .cloud .cloud-box-wrap .cloud-img-wrap {width: 50%;}
+  .linkage .cloud .cloud-box-wrap .cloud-img-wrap .cloud-icon {max-width: 100%;}
+  .linkage .process .process-box-wrap .process-box-desc .process-desc {word-break: keep-all;}
+  .linkage .process .process-box-wrap .process-box-desc > img {width: 58%;}
+  .linkage .process .process-box-col .process-box-drive img:nth-child(1) {margin-left: 0;}
+  .linkage .process .process-box-col .process-box-drive img:nth-child(2) {width: 58.8%;}
+  .linkage .process .process-box-col .process-box-calender img:nth-child(2) {width: 58.8%;}
+}
 
+@media (max-width: 1045px) {
+  .linkage .erp .erp-box {height: 340px;}
+  .linkage .erp .erp-box .erp-desc-wrap .erp-icon {margin-top: 50px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-ms {height: 250px;}
+  .linkage .process .process-box-col .process-box-drive {height: 400px;}
+  .linkage .process .process-box-col .process-box-calender {height: 400px;}
+}
+
+@media (max-width: 959px) {
+  .linkage .inner {margin: 0 60px;}
+  .linkage .erp .erp-box {height: 290px;}
+  .linkage .erp .erp-box .erp-desc-wrap .erp-desc {font-size: 18px; line-height: 28px;}
+  .linkage .erp .erp-box .erp-desc-wrap .erp-icon {font-size: 75px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-desc {height: 300px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-desc .cloud-desc {font-size: 18px; line-height: 28px;}
+  .linkage .process .process-box-wrap .process-box-desc .process-desc {font-size: 18px; line-height: 28px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-icon-wrap > img:nth-child(1) {margin-left: -50px;}
+}
+
+@media (max-width: 872px) {
+  .linkage .erp .erp-box .erp-desc-wrap {padding: 40px 0 50px 40px;;}
+  .linkage .erp .erp-box .erp-desc-wrap .erp-desc {width: 90%; word-break: keep-all;}
+  .linkage .erp .erp-box .erp-img-1 {right: 23%;}
+  .linkage .erp .erp-box .erp-img-2 {right: 2%;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-ms {height: 220px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-naver > img:first-child {width: 100%;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-img-wrap > img {width: 75%;}
+  .linkage .process .process-box-wrap .process-box-desc {padding: 40px 13px 20px 40px;}
+  .linkage .process .process-box-wrap .process-box-desc > img {width: 50%;}
+  .linkage .process .process-box-col .process-box-drive {height: 340px;}
+  .linkage .process .process-box-col .process-box-calender {height: 340px;}
+}
+
+@media (max-width: 767px) {
+  .linkage .inner {margin: 0 20px;}
+  .linkage .introduction .title-desc {font-size: 16px;}
+  .linkage .erp {margin-top: 160px;}
+  .linkage .erp .erp-box {margin-top: 40px; height: 380px;}
+  .linkage .erp .erp-box .erp-desc-wrap {padding: 40px 30px 228px; }
+  .linkage .erp .erp-box .erp-desc-wrap .erp-desc {width: 100%; font-size: 18px; line-height: 28px; }
+  .linkage .erp .erp-box .erp-desc-wrap .erp-icon {margin-top: 40px; font-size: 40px;}
+  .linkage .erp .erp-box .erp-img-1 {top: unset; bottom: -40px; right: 80px; width: 187px;}
+  .linkage .erp .erp-box .erp-img-2 {top: unset; bottom: 60px; right: -40px; width: 187px;}
+  .linkage .cloud {margin-top: 120px;}
+  .linkage .cloud .cloud-box-wrap {margin-top: 40px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-desc {padding: 40px 30px 0; flex-direction: column-reverse; height: unset; overflow: hidden;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-desc .cloud-desc {margin: 0; word-break: keep-all;}
+  .linkage .cloud .cloud-box-wrap .cloud-img-wrap {padding-left: 0; width: 307px;}
+  .linkage .cloud .cloud-box-wrap .cloud-img-wrap > img {transform: translateY(30px);}
+  .linkage .cloud .cloud-box-wrap .cloud-img-wrap .cloud-icon {top: -27px; right: -30px; width: 280px;}
+  .linkage .cloud .cloud-box-wrap .cloud-col {flex-direction: column;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-ms {padding: 30px 30px 15px; height: unset;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-img-wrap > img {width: 177px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-icon-wrap {margin: -15px auto 0; width: 320px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-icon-wrap > img:nth-child(1) {margin-top: 10px; width: 315px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-ms .ms-icon-wrap > img:nth-child(2) {width: 298px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-naver {padding: 30px 30px 15px; display: flex; flex-direction: column;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-naver > img:first-child {width: 220px;}
+  .linkage .cloud .cloud-box-wrap .cloud-box-naver > img:last-child {margin: 5px auto 0; width: 320px;}
+  .linkage .process {margin-top: 120px;}
+  .linkage .process .process-box-wrap {margin-top: 40px;}
+  .linkage .process .process-box-wrap .process-box-desc {padding: 40px 30px; flex-direction: column;}
+  .linkage .process .process-box-wrap .process-box-desc > img {align-self: flex-end; transform: translateX(20px); max-width: unset; width: 414px}
+  .linkage .process .process-box-col {flex-direction: column;}
+  .linkage .process .process-box-col .process-box-drive {padding: 0 0 130px 0; height: unset;}
+  .linkage .process .process-box-col .process-box-drive img:nth-child(2) {margin-left: 0; width: unset; right: 50px;}
+  .linkage .process .process-box-col .process-box-calender {padding: 0 0 140px 0; justify-content: center; height: unset;}
+  .linkage .process .process-box-col .process-box-calender img:nth-child(2) {width: unset;}
+  .linkage .start {margin-top: 120px;}
+
+}
+
+@media (max-width: 515px) {
+  .linkage .process .process-box-wrap .process-box-desc > img {align-self: flex-start; transform: translateX(-20px);}
+  .linkage .process .process-box-col .process-box-drive img:nth-child(2) {right: 20px; width: 268px;}
+  .linkage .process .process-box-col .process-box-drive img:nth-child(1) {width: 316px;}
+  .linkage .process .process-box-col .process-box-calender img {width: 302px;}
+  .linkage .process .process-box-col .process-box-calender img:nth-child(2) {width: 282px; right: -18px;}
+}
 
 
 
