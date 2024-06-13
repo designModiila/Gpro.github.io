@@ -477,7 +477,7 @@ header.fixed {
 .pricing .extra-text {margin-bottom: 180px; display: flex; justify-content: center;}
 .pricing .extra-text p {margin: 20px 0 0 30px; width: 1280px; text-align: left; font-size: 18px; font-weight: 400; line-height: 32px; color: #666666;}
 
-.pricing .pricing-detail {position: relative; background-color: #D5E6FF30;}
+.pricing .pricing-detail {padding-top: 0; position: relative; background-color: #D5E6FF30;}
 .pricing .tab-menu-2 {position: sticky; top: 92px;}
 .pricing .tab-menu-2 ul {display: flex; justify-content: center;}
 .pricing .tab-menu-2 ul .tablinks-2 {display: flex; justify-content: center; align-items: center; width: 320px; height: 70px; background-color: #fff; border-radius: 10px;}
@@ -512,7 +512,7 @@ header.fixed {
 .pricing .content-box-wrap .content-box-under .icon-wrap {display: flex; justify-content: center; align-items: center; width: 100px; height: 100px; border-radius: 10px; box-shadow: 0px 2px 20px #0000000d;}
 .pricing #startup .content-box-upper .content-box {height: 369px;}
 .pricing #startup .content-box-under .icon-wrap-2 {width: 272px;}
-.pricing .add-service {padding: 130px 60px 0;}
+.pricing .add-service {padding: 130px 60px 196px;}
 .pricing .add-service .content-box {padding: 50px; display: flex; justify-content: space-between; height: unset; gap: 50px;}
 .pricing .add-service .content-box:not(:nth-child(1)) {margin-top: 40px;}
 .pricing .add-service .content-box .box-heading {margin-top: 0;}
@@ -554,8 +554,11 @@ header.fixed {
   .pricing .pricing-type .table-mo tbody {width: 100%; display: grid; justify-content: center; align-items: center;}
   .pricing .pricing-type .table-mo tr {text-align: center; height: 96px; border-right: 0; display: table-row-group;}
   .pricing .pricing-type .table-mo tr td {padding: 0;}
-  .pricing .pricing-type .table-mo tr td .more-btn {margin-top: 30px; display: flex; justify-content: center; padding: 12px 0; gap: 10px; width: 272px; height: 40px; font-size: 15px; font-weight: 400; background-color: #1F2E3D; color: #fff; border-radius: 100px;}
+  .pricing .pricing-type .table-mo tr td .more-btn {margin-top: 30px; display: flex; justify-content: center; padding: 12px 0; gap: 10px; width: 272px; height: 40px; font-size: 15px; font-weight: 400; background-color: #1F2E3D; color: #fff; border-radius: 100px; cursor: pointer;}
   .pricing .pricing-type .table-mo tr td .more-btn > img {transform: rotate(180deg);}
+  .pricing .pricing-type .table-mo tr td .more-btn:hover {background-color: #35485b;}
+  .pricing .pricing-type .more-hidden {display: none;}
+  .pricing .pricing-type .more-hidden.active {display: grid;}
   .pricing .extra-text p {padding-left: 60px;}
 
   .pricing .tab-menu-2 {padding: 0 60px;}
@@ -587,10 +590,6 @@ header.fixed {
   .pricing .pricing-type .total-price-row p:nth-child(1) {font-size: 13px;}
   .pricing .pricing-type .total-price span {font-size: 13px;}
   .pricing .pricing-type .type-title-wrap {margin-top: 0;}
-
-  .pricing .pricing-type .more-hidden {display: none;}
-  .pricing .pricing-type .more-hidden.active {display: grid;}
-  
   .pricing .pricing-type .pricing-type-title {padding: 30px 25px; height: 116px; align-items: center; gap: 15px;}
   .pricing .pricing-type .pricing-type-title .type-title {text-align: left; font-size: 22px;}
   .pricing .pricing-type .pricing-type-title .type-desc {margin-top: 13px; text-align: left; font-size: 14px; word-break: keep-all;}
