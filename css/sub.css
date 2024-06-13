@@ -478,10 +478,12 @@ header.fixed {
 .pricing .extra-text p {margin: 20px 0 0 30px; width: 1280px; text-align: left; font-size: 18px; font-weight: 400; line-height: 32px; color: #666666;}
 
 .pricing .pricing-detail {padding-top: 0; position: relative; background-color: #D5E6FF30;}
-.pricing .tab-menu-2 {position: sticky; top: 92px;}
+.pricing .tab-menu-2 {position: sticky; top: 92px; z-index: 1;}
 .pricing .tab-menu-2 ul {display: flex; justify-content: center;}
-.pricing .tab-menu-2 ul .tablinks-2 {display: flex; justify-content: center; align-items: center; width: 320px; height: 70px; background-color: #fff; border-radius: 10px;}
+.pricing .tab-menu-2 ul .tablinks-2 {display: flex; justify-content: center; align-items: center; width: 320px; height: 70px; background-color: #fff; border-radius: 10px; transition: all 0.2s; cursor: pointer;}
 .pricing .tab-menu-2 ul .tablinks-2 a {font-size: 24px; font-weight: 600; color: #1F2E3D;}
+.pricing .tab-menu-2 ul .tablinks-2:hover {background-color: #1F2E3D;}
+.pricing .tab-menu-2 ul .tablinks-2:hover a {color: #fff;}
 .pricing .tab-menu-2 ul .tablinks-2.active {background-color: #1F2E3D;}
 .pricing .tab-menu-2 ul .tablinks-2.active a {color: #fff;}
 .pricing .tab-content-2 {display: none; padding: 200px 60px 140px;}
