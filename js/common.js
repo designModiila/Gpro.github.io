@@ -91,7 +91,7 @@ document.querySelectorAll(".content02, .content04, .content06, .content07, .cont
     );
 
 });
-
+ 
 document.querySelectorAll(".content03, .content11, .content14").forEach((section2, index) => {
   let tl2 = gsap.timeline({
     scrollTrigger: {
