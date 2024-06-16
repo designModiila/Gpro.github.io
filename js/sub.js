@@ -80,6 +80,8 @@ $(document).ready(function() {
 
 });
 
+
+// 애니메이션
 gsap.registerPlugin(ScrollTrigger);
 
 const cont__ani = gsap.utils.toArray('.cont__ani');
@@ -131,7 +133,40 @@ cont__ani_delay.forEach(cont__ani_delayItem => {
     });
 });
 
-document.querySelectorAll(".contents").forEach((section, index) => {
+const cont__ani_delay_short = gsap.utils.toArray('.cont__ani_delay_short');
+gsap.set(cont__ani_delay_short, {transform: "translateY(30%)", opacity: 0 });
+cont__ani_delay_short.forEach(cont__ani_delay_shortItem => {
+    gsap.to(cont__ani_delay_shortItem, {
+        transform: "translateY(0%)",
+        opacity: 1,
+        autoAlpha: 1,
+        duration: 0.8,
+        delay: 0.2,
+        scrollTrigger: {
+            trigger: cont__ani_delay_shortItem,
+            start: 'top 70%',
+            toggleActions: "play none none none",
+        }
+    });
+});
+
+const cont__ani_delay_first = gsap.utils.toArray('.cont__ani_delay_first');
+gsap.set(cont__ani_delay_first, {transform: "translateY(50%)", opacity: 0 });
+cont__ani_delay_first.forEach(cont__ani_delay_firstItem => {
+    gsap.to(cont__ani_delay_firstItem, {
+        transform: "translateY(0%)",
+        opacity: 1,
+        autoAlpha: 1,
+        duration: 0.5,
+        scrollTrigger: {
+            trigger: cont__ani_delay_firstItem,
+            start: 'top 60%',
+            toggleActions: "play none none none",
+        }
+    });
+});
+
+document.querySelectorAll(".contents, .pricing").forEach((section, index) => {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".contents .content-box",
@@ -170,7 +205,7 @@ document.querySelectorAll(".contents").forEach((section, index) => {
 
 
 
-document.querySelectorAll(".function").forEach((section, index) => {
+document.querySelectorAll(".function, .use").forEach((section, index) => {
     let tl2 = gsap.timeline({
       scrollTrigger: {
         trigger: section,

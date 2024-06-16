@@ -413,8 +413,9 @@ header.fixed {
 .trial-bg {width: 100%; background: linear-gradient(180deg, #F1F3FA 0%, white 100%)}
 .trial .title-sub {text-align: center; color: #86868B; font-size: 20px; font-weight: 500;}
 .trial .title-main {margin-top: 20px; text-align: center; color: #1F2E3D; font-size: 52px; font-weight: 700; word-wrap: break-word}
+.trial .title-main > br {display: none;}
 .trial .btn-wrap {margin-top: 80px; display: flex; justify-content: center; gap: 70px; transition: all 0.3s;}
-.trial .btn-wrap .btn-big {display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px; width: 500px; height: 300px; text-align: center; background: white; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05); border-radius: 20px; transition: 0.3s ease-in;}
+.trial .btn-wrap .btn-big {display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px; width: 500px; height: 300px; text-align: center; background: white; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05); border-radius: 20px; transition: 0.2s ease-in;}
 .trial .btn-wrap .btn-left {position: relative;}
 .trial .btn-wrap .btn-left::after {content: '단, 무료 이용 기간 내 10인 초과 시 유료 전환'; display: block; position: absolute; left: 0; right: 0; bottom: -36px; margin: 0 auto; color: #A1A1A1; font-size: 16px; font-weight: 500; word-wrap: break-word; pointer-events: none;}
 .trial .btn-wrap .figure-wrap {position: relative}
@@ -431,6 +432,30 @@ header.fixed {
 .trial .btn-wrap .btn-big {position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px; width: 500px; height: 300px; text-align: center; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05); border-radius: 20px;}
 .trial .btn-wrap .btn-big::before {content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; background: linear-gradient(121deg, #3EA3FF 0%, #3E58FF 100%); transition: opacity 0.2s ease-in; border-radius: inherit;}
 .trial .btn-wrap .btn-big:hover::before {opacity: 1;}
+
+@media (max-width: 1190px) {
+  .trial-bg {padding: 140px 60px;}
+  .trial .title-main {word-break: keep-all;}
+  .trial .title-main > br {display: block;}
+  .trial .btn-wrap {gap: 30px;}
+}
+@media (max-width: 767px) {
+  .trial-bg {padding: 118px 20px 242px;}
+  .trial .title-sub {font-size: 16px;}
+  .trial .title-main {font-size: 30px; line-height: 42px;}
+  .trial .btn-wrap {margin-top: 74px; flex-direction: column; align-items: center; gap: 70px;}
+  .trial .btn-wrap .btn-big {max-width: 320px; height: 200px;}
+  .trial .btn-wrap .figure-wrap .figure-txt {font-size: 14px; line-height: 24px;}
+  .trial .btn-wrap .figure-wrap .figure {padding: 7px 25px;}
+  .trial .btn-wrap .figure-wrap .triangle {top: 38px;}
+  .trial .btn-wrap .main-txt {font-size: 30px; line-height: 42px;}
+  .trial .btn-wrap .btn-left::after {font-size: 14px; bottom: -30px;}
+  .trial .btn-wrap {margin-top: 60px;}
+}
+
+@media (max-width: 430px) {
+  .trial .btn-wrap .btn-big {max-width: unset; width: 100%;}
+}
 
 /******** 요금제 안내 ********/
 .pricing .tab-menu ul li.active {background-color: #fff; color: #1F2E3D;}
