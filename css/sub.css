@@ -196,10 +196,12 @@ header.fixed {
   font-family: Pretendard;
   font-style: normal;
   font-size: 52px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 70px;
 }
-
+.para-title-bold {
+  font-weight: 800;
+}
 .para-desc {
   color: #8D96A1;
   font-family: Pretendard;
@@ -411,6 +413,31 @@ header.fixed {
   background-color: #FAFAF9;
 }
 
+.ivory-cream {
+  background-color: #FAF6EE;
+}
+
+.soft-mint {
+  background-color: #F5F9F3;
+}
+
+.cocoa {
+  color: #785E4B;
+}
+
+.dark-brown {
+  color: #453632;
+}
+
+.dark-khaki {
+  color: #273C28;
+}
+
+.olive-khaki {
+  color: #273C28;
+}
+
+
 .content14 {
   padding: 249px 0 243px 0;
 }
@@ -426,10 +453,12 @@ header.fixed {
 
 .box-wrapper {display: flex; justify-content: center; gap: 20px;}
 .box-wrapper .box {margin: 0; width: 490px; height: 479px;}
+.box.box-text-wrap {height: 479px;}
 .box-text {padding-top: 0; padding-left: 80px; display: flex; flex-direction: column; justify-content: center; gap: 30px;}
 .para-box-title {font-size: 36px; font-weight: 600; line-height: 46px; color: #242A30;}
 .para-box-desc {font-size: 18px; font-weight: 400; line-height: 28px; color: #242A30;}
 .box-text-wrap {display: flex; align-items: center; height: 479px;}
+.box-title-small {margin-bottom: -12px; font-size: 18px; font-weight: 600;}
 
 .content01 .small-title-wrap {margin-bottom: 25px;  display: flex; justify-content: center; gap: 7px;}
 .content01 .small-title {font-size: 24px; font-weight: 600; color: #8D96A1;}
@@ -443,6 +472,15 @@ header.fixed {
 .content04 .com-img-02 {position: absolute; bottom: -24px; right: 280px;}
 .content05 .fav-img-01 {position: absolute; top: 30px; left: 50%; transform: translateX(-50%);}
 .content05 .fav-img-02 {position: absolute; bottom: -60px; right: -65px;}
+
+.content01 .box .community-img01 {position: absolute; bottom: -25px; right: -25px;}
+.content02 .time-img-01 {position: absolute; top: 60px; right: -25px;} 
+.content03 .per-img-01 {position: absolute; right: 0;}
+.content04 .notice-img-01 {position: absolute; right: 0;}
+.content05 .func-img-01 {position: absolute; bottom: 0; right: 0;}
+.content05 .comm-cont05-box {margin-top: 20px;}
+.content05 .auto-img-01 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
 
 
 @media (max-width: 767px) {
