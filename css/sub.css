@@ -196,8 +196,8 @@ header.fixed {
   font-family: Pretendard;
   font-style: normal;
   font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 70px;
+  font-weight: 600;
+  margin-bottom: 100px;
 }
 .para-title-bold {
   font-weight: 800;
@@ -421,6 +421,15 @@ header.fixed {
   background-color: #F5F9F3;
 }
 
+.soft-aqua {
+  background-color: #E6EEF1;
+}
+
+.light-beige {
+  background-color: #F7F5F5;
+}
+
+
 .cocoa {
   color: #785E4B;
 }
@@ -437,6 +446,20 @@ header.fixed {
   color: #273C28;
 }
 
+.gray-brown {
+  color: #858585;
+}
+
+.gray-blue {
+  color: #8D96A1;
+}
+
+.charcoal-gray {
+  color: #242A30;
+}
+
+
+
 
 .content14 {
   padding: 249px 0 243px 0;
@@ -451,6 +474,7 @@ header.fixed {
   margin-bottom: 50px;
 }
 
+/* 공통 */
 .box-wrapper {display: flex; justify-content: center; gap: 20px;}
 .box-wrapper .box {margin: 0; width: 490px; height: 479px;}
 .box.box-text-wrap {height: 479px;}
@@ -460,6 +484,7 @@ header.fixed {
 .box-text-wrap {display: flex; align-items: center; height: 479px;}
 .box-title-small {margin-bottom: -12px; font-size: 18px; font-weight: 600;}
 
+/* 업무시작 */
 .content01 .small-title-wrap {margin-bottom: 25px;  display: flex; justify-content: center; gap: 7px;}
 .content01 .small-title {font-size: 24px; font-weight: 600; color: #8D96A1;}
 .content14 .btn-wrapper,
@@ -473,13 +498,37 @@ header.fixed {
 .content05 .fav-img-01 {position: absolute; top: 30px; left: 50%; transform: translateX(-50%);}
 .content05 .fav-img-02 {position: absolute; bottom: -60px; right: -65px;}
 
+/* 소통 */
 .content01 .box .community-img01 {position: absolute; bottom: -25px; right: -25px;}
 .content02 .time-img-01 {position: absolute; top: 60px; right: -25px;} 
 .content03 .per-img-01 {position: absolute; right: 0;}
 .content04 .notice-img-01 {position: absolute; right: 0;}
 .content05 .func-img-01 {position: absolute; bottom: 0; right: 0;}
 .content05 .comm-cont05-box {margin-top: 20px;}
-.content05 .auto-img-01 {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.content05 .auto-img-01 {position: absolute; top: 50%; left: 50%; transform: translate(-48%,-50%);}
+
+/* 인사시스템 */
+.content01 .box-outside {margin: 0 auto; position: relative; width: 1000px;}
+.content01 .hr-01-img01 {position: absolute; bottom: -50px; right: -40px;}
+.content02 .box-grid {margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; width: 1000px; justify-content: center; align-items: center; gap: 20px;}
+.content02 .box01 {grid-row: 1 / 2; grid-column: 1 / 2;}
+.content02 .box02 {grid-row: 2 / 3; grid-column: 1 / 2;}
+.content02 .box03 {height: 978px; grid-row: 1 / 3; grid-column: 2 / 3;}
+.content02 .box-wrapper {height: unset;}
+.content02 .hr-02-img01 {position: absolute; top: 45px; left: 0;}
+.content02 .hr-02-img02 {position: absolute; bottom: -45px; right: -40px;}
+.content02 .hr-02-img03 {position: absolute; top: 0; right: 0;}
+.content03 .hr-03-img01 {position: absolute; top: 72px; right: 50px;}
+.content04 .hr-04-img01 {position: absolute; top: 50%; left: 50%; transform: translate(-49%, -50%); max-width: none; width: auto;}
+.content05 .hr-05-img01 {position: absolute; top: 45px; right: -105px;}
+.content06 .box-grid {margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; width: 1000px; justify-content: center; align-items: center; gap: 20px;}
+.content06 .box01 {grid-row: 1 / 2; grid-column: 1 / 2;}
+.content06 .box02 {grid-row: 2 / 3; grid-column: 1 / 2;}
+.content06 .box03 {height: 978px; grid-row: 1 / 3; grid-column: 2 / 3;}
+.content06 .hr-06-img01 {position: absolute; top: -10px; left: -80px;}
+.content06 .hr-06-img02 {position: absolute; bottom: -10px; right: -70px;}
+.content07 .hr-07-img01 {position: absolute; top: 50%; left: 50%; transform: translate(-48%,-50%);}
+
 
 
 
