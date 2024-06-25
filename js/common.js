@@ -284,3 +284,47 @@ $(document).ready(function() {
      btnFree.classList.toggle('floating', content01Bottom < 0 && content14Top >= viewportHeight);
      btnFree.classList.toggle('hidden', content14Top < viewportHeight);
    });
+
+
+
+  // 메인 슬라이드
+   var swiper = new Swiper(".main-slide", {
+    effect: "coverflow",
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    loop: true,
+    speed: 800,
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 135,
+        depth: 120,
+        modifier: 3,
+        slideShadows: true
+   },
+   navigation: {
+                nextEl: ".swiper-button-prev",
+                prevEl: ".swiper-button-next",
+            },
+            on: {
+                init: function () {
+                    setSlideOpacity(this);
+                },
+                slideChangeTransitionStart: function () {
+                    setSlideOpacity(this);
+                }
+            }
+        });
+
+        function setSlideOpacity(swiper) {
+            var slides = swiper.slides;
+            var activeIndex = swiper.activeIndex;
+            slides.forEach(function(slide, index) {
+                if (index === activeIndex) {
+                    slide.style.opacity = '1'; // 활성화된 슬라이드
+                } else if (index === activeIndex - 1 || index === activeIndex + 1 ) {
+                    slide.style.opacity = '0.2'; // 활성화된 슬라이드 주변의 슬라이드
+                } else {
+                    slide.style.opacity = '0'; // 그 외의 슬라이드
+                }
+            });
+        }

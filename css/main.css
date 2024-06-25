@@ -15,8 +15,8 @@
 .title-main {font-size: 52px; font-weight: 800; line-height: auto;}
 .title-main > span {font-size: 64px;}
 .partner {padding: 138px 0 150px;}
-.partner .logo-wrap {margin-top: 92px;}
-.partner .logo-wrap .logo-box {padding: 10px; height: 80px; display: flex; justify-content: center; align-items: center; border-radius: 20px; background-color: #fff;}
+.partner .logo-wrap {margin: 92px 60px 0;}
+.partner .logo-wrap .logo-box {padding: 10px 0; height: 80px; display: flex; justify-content: center; align-items: center; border-radius: 20px; background-color: #fff;}
 .partner .logo-wrap .logo-box > img {object-fit: contain;}
 .partner .logo-wrap .grid-columns-5 {display: grid; grid-template-columns: repeat(5, 1fr); column-gap: 0px; row-gap: 24px;}
 .partner .logo-wrap .grid-columns-6 {margin-top: 24px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 23px;}
@@ -30,28 +30,32 @@
 .swiper-slide img {display: block; max-width: unset; width: auto;}
 .swiper-button-prev, .swiper-rtl .swiper-button-prev {position: absolute; top: 50%; transform: translateY(-50%); left: 0;}
 .swiper-button-next, .swiper-rtl .swiper-button-next {position: absolute; top: 50%; transform: translateY(-50%); right: 0;}
-.swiper-button-prev, .swiper-button-next {
-    color: #fff; /* 원하는 색상으로 변경 */
-}
-/* 커스텀 화살표 아이콘 추가 */
-.swiper-button-prev::after, .swiper-button-next::after {
-    font-size: 40px;
-    color: #fff; /* 원하는 색상으로 변경 */
-}
+.swiper-button-prev, .swiper-button-next {color: #fff;}
+.swiper-button-prev::after, .swiper-button-next::after {font-size: 40px; color: #fff;}
 
-.content02 {overflow: hidden;}
-.content02 .review-wrap {margin-top: 65px; margin-left: 320px; display: flex; gap: 17px;}
-.content02 .review-wrap .review {padding: 30px 28px; width: 396px; height: 254px; text-align: left; border-radius: 12px;  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
+.content02 {overflow: hidden; padding-bottom: 463px;}
+.content02 .review-wrap {position: absolute; margin-top: 75px; width: 1635px; display: flex; gap: 17px; animation: moveRightToLeft 25s linear infinite;}
+.content02 .review-wrap .review {padding: 30px 28px; width: 396px !important; height: 254px !important; text-align: left; border-radius: 12px;  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
 .content02 .review-wrap .review .title-wrap {display: flex; align-items: center; gap: 19px;}
 .content02 .review-wrap .review .icon {font-size: 24px;}
 .content02 .review-wrap .review .job {font-size: 18px; font-weight: 700; color: #303C47;}
 .content02 .review-wrap .review .name {font-size: 15px; font-weight: 600; color: #303C47;}
 .content02 .review-wrap .review .post {margin-top: 26px; font-size: 14px; font-weight: 500; line-height: 20px; color: #7B8FA2;}
 
+@keyframes moveRightToLeft {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
 .content03 {background-color: #121212;}
 .content03 .para-title {margin-bottom: 20px; font-weight: 700; color: #fff;}
 .content03 .main-desc-s {margin-bottom: 24px; font-weight: 500; color: #86868B;}
 .content03 .main-img-wrap {padding: 200px 0; display: flex; justify-content: center; align-items: center; width: 100%; background: url(../images/main_sec03_bg_01.png)no-repeat center center;}
+.content03 .main-img-wrap img {margin-left: 80px; margin-right: 30px;}
 .content03 .content-para {margin-top: 285px;}
 .content03 .content-para-01 {margin-top: 80px;}
 .content03 .content-para-01 .img-box {margin: 65px auto 0; padding: 64px 52px 0; max-width: 1010px; height: 544px; border-radius: 12px; background-color: #666779; overflow: hidden;}
@@ -62,7 +66,7 @@
 .content03 .content-para-02 .img-box-wrap .img-box > img {display: block; max-width: none; width: auto; height: auto;}
 .content03 .content-para-03 .img-box {margin: 60px auto 0; padding: 50px 0 0 20px; display: flex; align-items: flex-start; max-width: 1280px; height: 544px; border-radius: 12px; background-color: #F5F5F5; overflow: hidden;}
 .content03 .content-para-03 .img-box .img-left {display: flex; flex-direction: column; gap: 0px;}
-.content03 .content-para-03 .img-box > img {max-width: 548px; object-fit: contain;}
+.content03 .content-para-03 .img-box > img {max-width: 548px; width: 50%; object-fit: contain;}
 .content03 .content-para-04 .img-box:nth-child(1) {padding: 50px 0 0 45px; width: 490px; height: 544px; border-radius: 12px; background-color: #EAF1F5; overflow: hidden;}
 .content03 .content-para-04 .img-box:nth-child(2) {width: 760px; height: 544px; border-radius: 12px; background-color: #EAF1F5; overflow: hidden;}
 .content03 .content-para-04 .ui-02 {margin: -80px 0 0 -50px; max-width: none; width: auto;}
@@ -101,15 +105,20 @@
 .content14 .para-desc .white {color: #fff;}
 
 
-
-
-
-
-
-
 .color-purple {color: #7760FF;}
 .color-blue {color: #0075FF;}
 .color-green {color: #00E016;}
 .color-yellow {color: #FFDA1B;}
 .color-cyan {color: #2BD9FF;}
 .color-pink {color: #E233FF;}
+
+@media (max-width: 1552px) {
+    .swiper-container {margin: 0 60px; width: unset;}
+}
+@media (max-width: 1400px) {
+    .content03 .content-para-03 {padding: 0 60px;}
+    .content03 .content-para-04 {padding: 0 60px;}
+}
+@media (max-width: 1120px) {
+    .section {margin: 0; padding-left: 60px; padding-right: 60px;}
+}
