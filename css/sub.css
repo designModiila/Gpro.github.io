@@ -534,7 +534,7 @@ header.fixed {
 
 @media (max-width: 1120px) {
   .box {max-width: 1000px; width: unset;}
-  .section {margin: 0 60px;}
+  .section {padding: 0 60px;}
   .para-title {word-break: keep-all;}
   .content01 .box-outside {max-width: 1000px; width: unset;}
   .content01 .box img {max-width: none; width: auto; right: unset; bottom: unset; top: 80px; left: 80px;}
@@ -607,7 +607,7 @@ header.fixed {
   .btn {padding: 16px 26px; font-size: 14px; gap: 15px;}
   .btn > img {width: 18px;}
 
-  .section {margin: 0; padding-top: 77px; padding-top: 0 !important; padding-bottom: 150px !important;}
+  .section {margin: 0; padding-top: 77px; padding-bottom: 150px !important;}
   .para-title {margin-bottom: 50px; padding: 0 20px; font-size: 28px; line-height: 38px;}
   .box-title-small {font-size: 14px;}
   .para-box-title {font-size: 24px; line-height: 34px;}
@@ -783,7 +783,7 @@ header.fixed {
 .pricing .tab-menu-2 ul .tablinks-2:hover a {color: #fff;}
 .pricing .tab-menu-2 ul .tablinks-2.active {background-color: #1F2E3D;}
 .pricing .tab-menu-2 ul .tablinks-2.active a {color: #fff;}
-.pricing .tab-content-2 {display: none; padding: 200px 60px 140px;}
+.pricing .tab-content-2 {display: none; padding: 200px 0px 140px;}
 .pricing .tab-content-2.active {display: block;}
 .pricing .title-wrap .title-sub {font-size: 20px; font-weight: 500; color: #86868B;}
 .pricing .title-wrap .title-main {margin-top: 40px;}
@@ -833,7 +833,8 @@ header.fixed {
   .pricing .item-category tr {width: 220px;}  
 }
 @media (max-width: 1360px) {
-  .pricing .tab-inner {padding: 0 60px;}
+  .pricing .section {padding-left: 60px; padding-right: 60px;}
+  .pricing .tab-inner {padding: 0 0px;}
   .pricing .table-format .title-mo {display: block;}
   .pricing .pricing-type .table-mo {display: block; width: 100%; border-radius: 0 0 10px 10px; border: 1px solid #ECECEC; border-top: 0;} 
   .pricing .item-category {display: none;}
@@ -858,9 +859,9 @@ header.fixed {
   .pricing .pricing-type .table-mo tr td .more-btn:hover {background-color: #35485b;}
   .pricing .pricing-type .more-hidden {display: none;}
   .pricing .pricing-type .more-hidden.active {display: grid;}
-  .pricing .extra-text p {padding-left: 60px;}
+  .pricing .extra-text p {padding-left: 0px;}
 
-  .pricing .tab-menu-2 {padding: 0 60px;}
+  .pricing .tab-menu-2 {padding: 0 0px;}
   .pricing .tab-menu-2 ul .tablinks-2 a {font-size: 20px;}
 }
 @media (max-width: 1279px) {
@@ -881,6 +882,8 @@ header.fixed {
   .pricing .tab-menu-2 ul .tablinks-2 a {font-size: 16px;}
 }
 @media (max-width: 767px) {
+  .pricing {padding-bottom: 150px;}
+  .pricing .section {padding: 0; padding-bottom: 0 !important;}
   .pricing .title-main {font-size: 30px;}
   .pricing .tab-menu {margin: 55px 0 auto;}
   .pricing .tab-menu ul li {font-size: 16px; padding: 10px 30px;}
@@ -896,6 +899,7 @@ header.fixed {
   .pricing .pricing-type table tbody tr td {padding: 20px; text-align: left; font-size: 14px;}
   .pricing .extra-text p {margin: 30px 20px 0; font-size: 14px; line-height: 24px;}
   .pricing .extra-text p .extra-space::after {content: ""; display: block; height: 10px;}
+  .pricing .tab-menu-2 {padding: 0 20px;}
   .pricing .tab-menu-2 ul .tablinks-2 {height: 40px;}
   .pricing .tab-menu-2 ul .tablinks-2 a {font-size: 13px;}
   .pricing .tab-content-2 {padding: 80px 20px 122px;}
@@ -1029,7 +1033,7 @@ header.fixed {
 }
 
 @media (max-width: 767px) {
-  .recommendation {padding: 110px 0 217px;}
+  .recommendation {padding: 0;}
   .recommendation .inner {padding: 0 20px;}
   .recommendation .onlymo {display: block;}
   .recommendation .btn-wrap {margin-top: 38px;}
@@ -1107,7 +1111,7 @@ header.fixed {
 .cloudvoucher .support .caution .caution-heading {font-size: 30px; font-weight: 600;}
 .cloudvoucher .support .caution ol {margin-top: 30px;}
 .cloudvoucher .support .caution ol li {margin-top: 8px; margin-left: 20px; list-style: decimal; font-size: 18px; font-weight: 500; line-height: 28px;}
-.cloudvoucher .question {margin-top: 70px;}
+.cloudvoucher .question {margin-top: 0;}
 .cloudvoucher .question .question-wrap {margin-top: 70px; width: 100%;}
 .cloudvoucher .question .question-wrap .question-row {padding: 30px 0; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #D9D9D9;}
 .cloudvoucher .question .question-wrap .question-row .icon-question {display: flex; align-items: center; gap: 30px;}
@@ -1146,8 +1150,10 @@ header.fixed {
 }
 @media (max-width: 767px) {
   .section {padding-top: 64px; padding-bottom: 222px;}
+  .cloudvoucher {padding-bottom: 0;}
   .cloudvoucher .inner {padding: 0 20px;}
-  .cloudvoucher .introduction {padding-bottom: 94px;}
+  .cloudvoucher .introduction {padding-bottom: 94px; padding-left: 0; padding-right: 0;}
+  .cloudvoucher .introduction .title-wrap img {width: 100%;}
   .cloudvoucher .introduction .title-wrap .title-sub {margin-top: 20px; font-size: 20px; font-weight: 600; line-height: 32px;}
   .cloudvoucher .introduction .title-wrap .title-main {margin-top: 20px; font-size: 30px; line-height: 42px;}
   .cloudvoucher .introduction .btn-wrap {margin-top: 60px;}
@@ -1165,6 +1171,7 @@ header.fixed {
   .cloudvoucher .support .caution .caution-heading {font-size: 24px;}
   .cloudvoucher .support .caution ol {margin-top: 20px;}
   .cloudvoucher .support .caution ol li {font-size: 16px; line-height: 28px; font-weight: 400;}
+  .cloudvoucher .question {padding: 0;}
   .cloudvoucher .question .question-wrap {margin-top: 60px;}
   .cloudvoucher .question .question-wrap .question-row {padding: 20px 0; gap: 10px;}
   .cloudvoucher .question .question-wrap .question-row .icon-question {gap: 15px;}
