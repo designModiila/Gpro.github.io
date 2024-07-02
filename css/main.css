@@ -167,16 +167,48 @@
 }
 
 @media (max-width: 767px) {
+    
+    .section {padding: 100px 20px 150px !important;}
     .section.content01 {padding-top: 97px !important; padding-bottom: 69px !important;}
     .content01 .para-title {margin-bottom: 45px; font-size: 24px; line-height: 38px;}
     .para-title > span {font-size: 32px; line-height: 50px;}
+    .btn-wrap {margin-top: 30px;}
+    .btn {height: 38px;}
     .content01 .btn-wrap {margin-top: 0; margin-bottom: 30px;}
     .content01 .btn {height: 38px;}
     .content01 .main-desc-s {font-size: 16px; line-height: 22px;}
     .main-slide {margin: 46px auto 0;}
     .content01 .main-desc {margin-top: 50px; font-size: 18px; line-height: 28px;}
+    .swiper-slide {height: 300px;}
+    .section.content02 {padding: 100px 20px 0 !important; height: 1046px;}
+    .title-main {font-size: 24px; line-height: auto;}
+    .title-main span {font-size: 32px;}
+    .partner .logo-wrap .logo-box {background-color: #fff; box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.05);}
+    .partner .logo-wrap {margin: 30px 60px 0;}
+    .partner .logo-wrap .grid-columns-5 {grid-template-columns: repeat(3, 1fr); gap: 10px;}
+    .partner .logo-wrap .grid-columns-6 {margin-top: 10px; grid-template-columns: repeat(3, 1fr); gap: 10px;}
+    .partner .logo-wrap .logo-box {padding: 10px; height: 34px; border-radius: 8px;}
+    .partner .logo-wrap .logo-box > img {height: 100%;}
+    .partner .logo-wrap .grid-columns-6 .logo-box:nth-child(4) img {height: 30px;}
+    .content02 .review-wrap .review {width: 280px !important; height: auto !important;}
+    .content02 .review-wrap .review .post {font-size: 13px;}
+    .content03 .main-desc-s {font-size: 16px; line-height: 24px;}
+    .content03 .main-img-wrap {padding: 60px 0; background-size: contain;}
+    .para-title {padding: 0;}
+    .content03 .content-para {margin-top: 190px;}
+    .content03 .img-box-wrap {gap: 20px;}
+    .content03 .content-para {margin-top: 130px;}
+    .content03 .content-para-04 .ui-04 {margin: -80px 0 0 150px;}
+    .main-desc-s {font-size: 16px; line-height: 22px;}
+    .content04 .content-para:not(:nth-child(1)) {margin-top: 140px;}
+    .content05 .logo-wrap .logo-box {height: 180px;}
+    .content06 {padding: 167px 20px 185px !important; height: 550px;}
+    .content06 .section-title {margin-bottom: 30px; font-size: 24px;}
+    .content06 .section-desc {font-size: 16px; line-height: 22px;}
+
+}
 
 
-
-
+@media (max-width: 590px) {
+    .partner .logo-wrap {margin: 30px 0 0;}
 }
