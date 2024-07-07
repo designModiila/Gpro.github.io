@@ -534,7 +534,7 @@ header.fixed {
 
 @media (max-width: 1120px) {
   .box {max-width: 1000px; width: unset;}
-  .section {padding: 0 60px;}
+  .section {padding: 140px 60px;}
   .para-title {word-break: keep-all;}
   .content01 .box-outside {max-width: 1000px; width: unset;}
   .content01 .box img {max-width: none; width: auto; right: unset; bottom: unset; top: 80px; left: 80px;}

@@ -130,11 +130,12 @@
     .content06 {padding: 248px 60px 60px;}
 }
 @media (max-width: 1120px) {
-    .section {margin: 0; padding-left: 60px; padding-right: 60px;}
+    .section {margin: 0; padding: 140px 60px;}
     .section.content01 {padding-left: 0; padding-right: 0;}
     .content01 .para-title {padding: 0 60px;}
     .content01 .main-desc-s {padding: 0 60px;}
     .content01 .main-desc {padding: 0 60px; word-break: keep-all;}
+    .content02 {height: 1250px;}
     .content03 .content-para-03 {padding: 0;}
     .content03 .content-para-04 {padding: 0;}
     .content03 .content-para-04 .ui-04 {margin: -150px 0 0 250px;}
@@ -194,13 +195,34 @@
     .content02 .review-wrap .review .post {font-size: 13px;}
     .content03 .main-desc-s {font-size: 16px; line-height: 24px;}
     .content03 .main-img-wrap {padding: 60px 0; background-size: contain;}
+    .content03 .content-para-02 .img-box-wrap .img-box {height: 273px;}
+    .content03 .content-para-02 .img-box-wrap .img-box:nth-child(1) {padding: 20px 0 0 20px;}
+    .content03 .content-para-02 .img-box-wrap .img-box:nth-child(2) {padding: 20px 0 0 20px;}
+    .content03 .content-para-02 .img-box-wrap .img-box > img {width: 110%;}
     .para-title {padding: 0;}
     .content03 .content-para {margin-top: 190px;}
     .content03 .img-box-wrap {gap: 20px;}
     .content03 .content-para {margin-top: 130px;}
+    .content03 .content-para-01 .img-box {padding: 20px 30px 0;}
     .content03 .content-para-04 .ui-04 {margin: -80px 0 0 150px;}
+    .content03 .content-para-03 .img-box {padding: 20px 0 0 20px;}
+    .content03 .content-para-04 .img-box:nth-child(1) {padding: 20px 0 0 20px; height: 300px;}
+    .content03 .content-para-04 .img-box:nth-child(2) {padding: 20px 0 0 20px; height: 300px;}
+    .content03 .content-para-04 .ui-03 {margin-top: 0;}
+    .content03 .content-para-04 .ui-04 {margin: -120px 0 0 120px;}
     .main-desc-s {font-size: 16px; line-height: 22px;}
     .content04 .content-para:not(:nth-child(1)) {margin-top: 140px;}
+    .content04 .img-box-wrap {gap: 20px;}
+    .content04 .function-para-01 .img-box {padding-top: 30px; height: 300px;}
+    .content04 .function-para-02 .img-box-wrap .img-box:nth-child(1) {padding: 0; height: 300px;}
+    .content04 .function-para-02 .img-box-wrap .img-box:nth-child(2) {padding: 30px 0 0 30px; height: 300px;}
+    .content04 .function-para-03 .img-box {padding: 30px 0 0 30px; height: 300px;}
+    .content04 .function-para-04 .img-box {height: 350px;}
+    .content04 .function-para-04 .img-box .img-left {text-align: left;}
+    .content04 .function-para-04 .img-box .img-left img:nth-child(1) {margin-left: 10px; margin-top: 20px; width: 180px;}
+    .content04 .function-para-04 .img-box .img-left img:nth-child(2) {margin-top: -20px; width: 300px;}
+    .content04 .function-para-04 .img-box .ui-03 {margin-top: 10px;}
+    .content04 .function-para-05 .img-box {gap: 20px;}
     .content05 .logo-wrap .logo-box {height: 180px;}
     .content06 {padding: 167px 20px 185px !important; height: 550px;}
     .content06 .section-title {margin-bottom: 30px; font-size: 24px;}
