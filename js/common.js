@@ -55,6 +55,12 @@ window.addEventListener("scroll", function() {
   header.classList.toggle("fixed", window.pageYOffset > 0);
 });
 
+
+
+
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 document.querySelectorAll(".content02, .content04, .content06, .content07, .content08, .content09, .content10, .content13").forEach((section, index) => {
   let tl = gsap.timeline({
@@ -65,7 +71,6 @@ document.querySelectorAll(".content02, .content04, .content06, .content07, .cont
       toggleActions: "play none none none"
     }
   });
-
 
   // 텍스트 박스 애니메이션
   tl.fromTo(
@@ -243,6 +248,53 @@ document.querySelectorAll(".content12").forEach((section5, index) => {
 
 });
 
+
+// 애니메이션
+gsap.registerPlugin(ScrollTrigger);
+
+const paragraphs = document.querySelectorAll(".content-para");
+
+paragraphs.forEach(paragraph => {
+  let tlPara = gsap.timeline({
+    scrollTrigger: {
+      trigger: paragraph,
+      start: "top +50%",
+      end: "top +=400",
+      toggleActions: "play none none none"
+    }
+  });
+
+  tlPara.fromTo(
+    paragraph.querySelectorAll(".para_ani__text"),
+    { opacity: 0, transform: "translateY(50%)" },
+    { opacity: 1, transform: "translateY(0%)", delay: 0.3, duration: 0.7 },
+    "show"
+  );
+
+  tlPara.fromTo(
+    paragraph.querySelectorAll(".para_ani__subtext"),
+    { opacity: 0, transform: "translateY(200%)" },
+    { opacity: 1, transform: "translateY(0%)", delay: 0.5, duration: 0.7 },
+    "show"
+  );
+
+  tlPara.fromTo(
+    paragraph.querySelectorAll(".para_ani__img"),
+    { opacity: 0, transform: "translateY(50%)" },
+    { opacity: 1, transform: "translateY(0%)", delay: 0.5, duration: 0.7 },
+    "show"
+  );
+
+  tlPara.fromTo(
+    paragraph.querySelectorAll(".para_ani__btn"),
+    { opacity: 0, transform: "translateY(100%)" },
+    { opacity: 1, transform: "translateY(0%)", delay: 0.7, duration: 0.7 },
+    "show"
+  );
+});
+
+
+
 // Swiper 슬라이더 초기화
 $(document).ready(function() {
   new Swiper('.swiper-container', {
@@ -288,7 +340,7 @@ $(document).ready(function() {
 
 
   // 메인 슬라이드
-   var swiper = new Swiper(".main-slide", {
+  var swiper = new Swiper(".main-slide", {
     effect: "coverflow",
     slidesPerView: 1.5,
     centeredSlides: true,
@@ -300,31 +352,51 @@ $(document).ready(function() {
         depth: 120,
         modifier: 3,
         slideShadows: true
-   },
-   navigation: {
-                nextEl: ".swiper-button-prev",
-                prevEl: ".swiper-button-next",
-            },
-            on: {
-                init: function () {
-                    setSlideOpacity(this);
-                },
-                slideChangeTransitionStart: function () {
-                    setSlideOpacity(this);
-                }
-            }
-        });
-
-        function setSlideOpacity(swiper) {
-            var slides = swiper.slides;
-            var activeIndex = swiper.activeIndex;
-            slides.forEach(function(slide, index) {
-                if (index === activeIndex) {
-                    slide.style.opacity = '1'; // 활성화된 슬라이드
-                } else if (index === activeIndex - 1 || index === activeIndex + 1 ) {
-                    slide.style.opacity = '0.2'; // 활성화된 슬라이드 주변의 슬라이드
-                } else {
-                    slide.style.opacity = '0'; // 그 외의 슬라이드
-                }
-            });
+    },
+    breakpoints: {
+        1024: {
+        coverflowEffect: {
+            stretch: 130,
+            depth: 130
         }
+        },
+        830: {
+            coverflowEffect: {
+                stretch: 100,
+                depth: 100
+            }
+        },
+        497: {
+          coverflowEffect: {
+              stretch: 70,
+              depth: 50
+          }
+      }
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    on: {
+        init: function () {
+            setSlideOpacity(this);
+        },
+        slideChangeTransitionStart: function () {
+            setSlideOpacity(this);
+        }
+    }
+});
+
+function setSlideOpacity(swiper) {
+    var slides = swiper.slides;
+    var activeIndex = swiper.activeIndex;
+    slides.forEach(function(slide, index) {
+        if (index === activeIndex) {
+            slide.style.opacity = '1'; // 활성화된 슬라이드
+        } else if (index === activeIndex - 1 || index === activeIndex + 1) {
+            slide.style.opacity = '0.2'; // 활성화된 슬라이드 주변의 슬라이드
+        } else {
+            slide.style.opacity = '0'; // 그 외의 슬라이드
+        }
+    });
+}
