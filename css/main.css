@@ -1,4 +1,14 @@
 @charset "utf-8";
+
+.main-header {background-color: #121212;}
+.main-header #nav > ul > li:hover {background-color: #121212;}
+.main-header #nav > ul > li > a {color: #9F9F9F;}
+.main-header #nav > ul > li > a {color: #9F9F9F;}
+.main-header #nav > ul > li > a:hover {color: #FFFFFF;}
+.main-header #nav > ul > li.has-sub > a {color: #9F9F9F;}
+.main-header #nav > ul > li.has-sub > a:hover {color: #FFFFFF;}
+.main-header #nav > ul > li.has-sub > a:before {background-image: url(../images/icon_arrow_color_main.svg);}
+
 .inner {max-width: 1280px; margin: 0 auto;}
 .content01 {background-color: #121212;}
 .content01 .para-title {margin-bottom: 60px; color: #FEFEFE; font-weight: 700;}
